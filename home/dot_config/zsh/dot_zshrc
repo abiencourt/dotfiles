@@ -1,0 +1,18 @@
+## Uncomment to profile zsh startup
+# zmodload zsh/zprof
+
+## Loading config files
+[[ -f "$ZDOTDIR/alias.zsh" ]] && source "$ZDOTDIR/alias.zsh"
+[[ -f "$ZDOTDIR/homebrew.zsh" ]] && source "$ZDOTDIR/homebrew.zsh"
+[[ -f "$ZDOTDIR/history.zsh" ]] && source "$ZDOTDIR/history.zsh"
+[[ -f "$ZDOTDIR/function.zsh" ]] && source "$ZDOTDIR/function.zsh"
+
+## zsh config options
+setopt interactivecomments # Allow comments on the command line
+setopt correct             # Turn on spelling correction
+setopt ignoreeof           # Force user to use `exit`
+
+pokeget random
+
+## Uncomment to profile zsh startup
+# zprof

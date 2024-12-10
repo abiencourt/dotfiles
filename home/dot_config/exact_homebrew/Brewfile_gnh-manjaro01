@@ -1,0 +1,163 @@
+tap "abdfnx/tap"
+tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
+tap "homebrew/command-not-found"
+tap "homebrew/services"
+tap "jesseduffield/lazydocker"
+tap "jesseduffield/lazynpm"
+tap "wez/wezterm-linuxbrew"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.12"
+# Build full-stack web and mobile apps in hours. Easy to start, easy to scale
+brew "aws-amplify"
+# C parser in Python
+brew "pycparser"
+# C Foreign Function Interface for Python
+brew "cffi"
+# CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM
+brew "aws-sam-cli"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# C library implementing the SSH2 protocol
+brew "libssh2"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Implementation of the DNS protocols
+brew "bind"
+# Yet another cross-platform graphical process/system monitor
+brew "bottom"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
+# Collection of Linux utilities
+brew "util-linux"
+# Core application library for C
+brew "glib"
+# X.Org: Protocol Headers
+brew "xorgproto"
+# Validate CloudFormation templates against the CloudFormation spec
+brew "cfn-lint"
+# Database of common MIME types
+brew "shared-mime-info"
+# OpenType text shaping engine
+brew "harfbuzz"
+# Library to render SVG files using Cairo
+brew "librsvg"
+# Versatile and fast Unicode/ASCII/ANSI graphics renderer
+brew "chafa"
+# Manage your dotfiles across multiple diverse machines, securely
+brew "chezmoi"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
+# Protocol buffers library
+brew "protobuf-c"
+# Malware identification and classification tool
+brew "yara"
+# Anti-virus software
+brew "clamav"
+# Statistics utility to count lines of code
+brew "cloc"
+# Defines a standard way of committing rules and communicating it
+brew "commitizen"
+# Image previews for lf file manager
+brew "ctpv"
+# Text processing system for reStructuredText
+brew "docutils"
+# Modern, maintained replacement for ls
+brew "eza"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# GNU compiler collection
+brew "gcc"
+# GitHub command-line tool
+brew "gh"
+# Distributed revision control system
+brew "git"
+# Blazing fast terminal-ui for git written in rust
+brew "gitui"
+# Manage your Java environment
+brew "jenv"
+# Library for storing/retrieving passwords and other secrets
+brew "libsecret"
+# LastPass command-line interface tool
+brew "lastpass-cli"
+# Simple terminal UI for git commands
+brew "lazygit"
+# Terminal file manager
+brew "lf"
+# Curses-based tool for viewing and analyzing log files
+brew "lnav"
+# Package manager for the Lua programming language
+brew "luarocks"
+# Fast, highly customisable system info script
+brew "neofetch"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Manage multiple Node.js versions
+brew "nvm"
+# Command-line Git information tool
+brew "onefetch"
+# Development kit for the Java programming language
+brew "openjdk@17"
+# Terminal-based presentations using Pandoc
+brew "patat"
+# Tools for and transforming and inspecting PDF files
+brew "qpdf"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Rust toolchain installer
+brew "rustup-init"
+# Command-line interface for https://speedtest.net bandwidth tests
+brew "speedtest-cli"
+# Cross-shell prompt for astronauts
+brew "starship"
+# Programmatically correct mistyped console commands
+brew "thefuck"
+# Simplified and community-driven man pages
+brew "tldr"
+# Upgrade all the things
+brew "topgrade"
+# Weather app for the terminal
+brew "wego"
+# Internet file retriever
+brew "wget"
+# Personal information dashboard for your terminal
+brew "wtfutil"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
+# Fish-like fast/unobtrusive autosuggestions for zsh
+brew "zsh-autosuggestions"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
+# Better and friendly vi(vim) mode plugin for ZSH
+brew "zsh-vi-mode"
+# a CLI app can send pretty HTTP & API requests with TUI
+brew "abdfnx/tap/resto"
+# A simple terminal UI for docker, written in Go
+brew "jesseduffield/lazydocker/lazydocker"
+# A simple terminal UI for git commands, written in Go
+brew "jesseduffield/lazynpm/lazynpm"
+# A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust
+brew "wez/wezterm-linuxbrew/wezterm"
+vscode "bfrangi.vscode-nightingale-theme"
+vscode "bierner.markdown-mermaid"
+vscode "bierner.markdown-preview-github-styles"
+vscode "codeium.codeium"
+vscode "dbaeumer.vscode-eslint"
+vscode "eamodio.gitlens"
+vscode "esbenp.prettier-vscode"
+vscode "ms-azuretools.vscode-docker"
+vscode "pivotal.vscode-boot-dev-pack"
+vscode "redhat.java"
+vscode "sndst00m.markdown-github-dark-pack"
+vscode "steoates.autoimport"
+vscode "vmware.vscode-spring-boot"
+vscode "vscjava.vscode-java-debug"
+vscode "vscjava.vscode-maven"
+vscode "vscjava.vscode-spring-boot-dashboard"
+vscode "vscjava.vscode-spring-initializr"
+vscode "wakatime.vscode-wakatime"
+vscode "wix.vscode-import-cost"

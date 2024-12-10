@@ -1,0 +1,37 @@
+# basics
+set hidden true
+set ignorecase true
+set icons true
+
+# custom functions
+cmd mkdir ${{
+    printf "Directory Name: "
+    read ans
+    mkdir $ans
+}}
+
+cmd mkfile ${{
+    printf "File Name: "
+    read ans
+    touch $ans
+}}
+
+cmd on-select &{{
+    lf -remote "send $id set statfmt \"$(eza -ld --color=always "$f")\""
+}}
+
+# keybindings
+map d # remove default cut function
+
+map x cut
+map H set hidden!
+map A push %mkdir<space>
+map a push %touch<space>
+map <enter> open
+
+# preview image
+set sixel true
+set previewer ctpv
+set cleaner ctpvclear
+&ctpv -s $id
+&ctpvquit $id

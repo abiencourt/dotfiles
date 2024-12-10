@@ -1,0 +1,6 @@
+[user]
+	email = adrien@revanista.com
+    signingkey = adrien@revanista.com
+
+[commit]
+    gpgsign = true

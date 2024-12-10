@@ -1,0 +1,57 @@
+# Unix
+
+{{ if ne .chezmoi.os "darwin" }}
+## Only needed on MacOS
+Library
+.config/amethyst
+.config/karabiner
+
+# Not using sway at the moment
+.config/sway
+.config/swaylock
+.config/swaync
+{{ end }}
+
+{{ if eq .chezmoi.os "darwin" }}
+## Only needed on Linux
+.config/mimeapps.list
+.config/sway
+.config/swaylock
+.config/waybar
+.config/kanshi
+.config/flatpak
+.config/swaync
+.config/gtk-3.0
+.config/hypr
+.config/qt6ct
+.config/plasma*
+.config/kdedefaults
+.config/hyprland-autoname-workspaces
+.config/konsolerc
+.config/kded5rc
+.config/kded6rc
+.config/kdeglobals
+.config/kglobalshortcutsrc
+.config/kinfocenterrc
+.config/kiorc
+.config/ksplashrc
+.config/ktimezonedrc
+.config/kwinrc
+.config/kxkbrc
+.config/xsettingsd
+{{ end }}
+
+###################################
+
+# Scripts
+
+{{ if ne .chezmoi.os "windows" }}
+.chezmoiscripts/windows/**
+{{ else }}
+.chezmoiscripts/linux/**
+{{ end }}
+
+{{ if eq .chezmoi.os "darwin" }}
+## Scripts that shouldn't run on MacOS
+.chezmoiscripts/linux/05-my-flatpak-install.sh
+{{ end }}

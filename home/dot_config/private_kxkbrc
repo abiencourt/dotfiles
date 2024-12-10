@@ -1,0 +1,6 @@
+[Layout]
+LayoutList=gb
+Options=caps:ctrl_modifier
+ResetOldOptions=true
+Use=true
+VariantList=extd

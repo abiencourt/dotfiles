@@ -1,0 +1,2 @@
+[Context]
+filesystems=!$HOME/.themes;!$HOME/.icons;~/.themes;~/.icons

@@ -1,0 +1,30 @@
+[includeIf  "hasconfig:remote.*.url:git@revanista.github.com:**/**"]
+    path = profile/revanista
+[includeIf  "hasconfig:remote.*.url:git@agoodshort.github.com:**/**"]
+    path = profile/agoodshort
+[includeIf  "hasconfig:remote.*.url:https://github.com/agoodshort/**"]
+    path = profile/agoodshort
+[includeIf  "hasconfig:remote.*.url:git@github.com:**/**"]
+    path = profile/abiencourt
+[includeIf  "hasconfig:remote.*.url:git@abiencourt.github.com:**/**"]
+    path = profile/abiencourt
+[includeIf  "hasconfig:remote.*.url:https://github.com/abiencourt/**"]
+    path = profile/abiencourt
+[core]
+    editor = nvim --cmd 'let g:unception_block_while_host_edits=1'
+[push]
+	autoSetupRemote = true
+[diff]
+	tool = nvimdiff
+[pull]
+	rebase = false
+[url "git@revanista.github.com:mgtgnh"]
+    insteadOf = ssh://git@github.com/mgtgnh
+[url "git@agoodshort.github.com:agoodshort"]
+    insteadOf = https://github.com/agoodshort
+[url "git@abiencourt.github.com:"]
+    insteadOf = https://github.com/abiencourt
+[init]
+	defaultBranch = main
+[user]
+	name = Adrien Biencourt

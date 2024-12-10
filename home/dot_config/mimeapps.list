@@ -1,0 +1,6 @@
+[Default Applications]
+text/html=com.microsoft.Edge.desktop
+x-scheme-handler/http=com.microsoft.Edge.desktop
+x-scheme-handler/https=com.microsoft.Edge.desktop
+x-scheme-handler/postman=Postman.desktop
+x-scheme-handler/etcher=balenaEtcher.desktop

@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# my-flatpak-apps.txt hash: {{ include "dot_config/flatpak/my-flatpak-apps.txt" | sha256sum }}
+
+echo "----- start: 05-my-flatpak-install.sh -----"
+
+if [[ ! -x "$(command -v flatpak)" ]]; then
+    echo "Installing flatpak..."
+    if [[ -x "$(command -v pacman)" ]]; then
+        sudo pacman -S flatpak --noconfirm
+    else
+        echo "No supported package manager found, impossible to install flatpak"
+        exit 1
+    fi
+    flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+    echo "Done installing flatpak"
+fi
+
+if [[ -f $HOME/.config/flatpak/my-flatpak-apps.txt ]]; then
+    echo "Installing my flatpak apps..."
+    xargs flatpak install -y flathub < $XDG_CONFIG_HOME/flatpak/my-flatpak-apps.txt
+    echo "Setting override for Google Chrome to create PWAs shortcuts..."
+    flatpak override --user --filesystem=~/.local/share/applications:create --filesystem=~/.local/share/icons:create com.google.Chrome
+    echo "Done installing my flatpak apps"
+
+else
+    echo "No my-flatpak-apps.txt found, impossible to install my flatpak apps"
+fi
+
+echo "----- end: 05-my-flatpak-install.sh -----"

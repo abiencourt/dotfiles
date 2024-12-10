@@ -1,0 +1,158 @@
+tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
+tap "homebrew/command-not-found"
+tap "jesseduffield/lazydocker"
+tap "jesseduffield/lazynpm"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# X.Org: Protocol Headers
+brew "xorgproto"
+# Validate CloudFormation templates against the CloudFormation spec
+brew "cfn-lint"
+# Versatile and fast Unicode/ASCII/ANSI graphics renderer
+brew "chafa"
+# Manage your dotfiles across multiple diverse machines, securely
+brew "chezmoi"
+# Modern replacement for 'ls'
+brew "exa"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# GitHub command-line tool
+brew "gh"
+# Distributed revision control system
+brew "git"
+# Blazing fast terminal-ui for git written in rust
+brew "gitui"
+# Improved top (interactive process viewer)
+brew "htop"
+# Update of iperf: measures TCP, UDP, and SCTP bandwidth
+brew "iperf3"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# LastPass command-line interface tool
+brew "lastpass-cli"
+# Simple terminal UI for git commands
+brew "lazygit"
+# Fast, highly customisable system info script
+brew "neofetch"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Find/fix obsolete Nerd Font icons
+brew "nerdfix"
+# Port scanning utility for large networks
+brew "nmap"
+# Manage multiple Node.js versions
+brew "nvm"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Cross-shell prompt for astronauts
+brew "starship"
+# User interface to the TELNET protocol
+brew "telnet"
+# Weather app for the terminal
+brew "wego"
+# Internet file retriever
+brew "wget"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
+# UNIX shell (command interpreter)
+brew "zsh"
+# Fish-like fast/unobtrusive autosuggestions for zsh
+brew "zsh-autosuggestions"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
+# A simple terminal UI for docker, written in Go
+brew "jesseduffield/lazydocker/lazydocker"
+# A simple terminal UI for git commands, written in Go
+brew "jesseduffield/lazynpm/lazynpm"
+# Automatic tiling window manager similar to xmonad
+cask "amethyst"
+# Tool to flash OS images to SD cards & USB drives
+cask "balenaetcher"
+# Configuration tool for the Betaflight firmware
+cask "betaflight-configurator"
+# Tool to remove unnecessary files and folders from disk
+cask "cleanmymac"
+# Screenshot software
+cask "flameshot"
+# Developer targeted fonts with a high number of glyphs
+cask "font-hack-nerd-font"
+# 3D parametric modeler
+cask "freecad"
+# Free and open-source image editor
+cask "gimp"
+# Web browser
+cask "google-chrome"
+# Free and open-source media player
+cask "iina"
+# Configuration tool for the INAV flight control system
+cask "inav-configurator"
+# Keyboard customizer
+cask "karabiner-elements"
+# Open-source keystroke visualizer
+cask "keycastr"
+# Snippet management app
+cask "lepton"
+# Web browser
+cask "microsoft-edge"
+# Client-side GUI application for modern database development and operations
+cask "nosql-workbench"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
+# Remote desktop
+cask "parsec"
+# Collaboration platform for API development
+cask "postman"
+# Tool to format memory cards complying with the SD File System spec
+cask "sdformatter"
+# Team communication and collaboration software
+cask "slack"
+# Menu bar indicator showing the currently selected space
+cask "spaceid"
+# 3D printer and slicing GUI
+cask "ultimaker-cura"
+# Keyboard configurator
+cask "via"
+# Virtualizer for x86 hardware
+cask "virtualbox"
+# Open-source code editor
+cask "visual-studio-code"
+# GPU-accelerated cross-platform terminal emulator and multiplexer
+cask "wezterm"
+# Open-source version of the X.Org X Window System
+cask "xquartz"
+# Video communication and virtual meeting platform
+cask "zoom"
+vscode "adpyke.codesnap"
+vscode "arr.marksman"
+vscode "asvetliakov.vscode-neovim"
+vscode "bierner.github-markdown-preview"
+vscode "bierner.markdown-checkbox"
+vscode "bierner.markdown-emoji"
+vscode "bierner.markdown-footnotes"
+vscode "bierner.markdown-mermaid"
+vscode "bierner.markdown-preview-github-styles"
+vscode "bierner.markdown-yaml-preamble"
+vscode "ChakrounAnas.turbo-console-log"
+vscode "CircleCI.circleci"
+vscode "Codeium.codeium"
+vscode "dbaeumer.vscode-eslint"
+vscode "eamodio.gitlens"
+vscode "esbenp.prettier-vscode"
+vscode "github.vscode-github-actions"
+vscode "JulianIaquinandi.nvim-ui-modifier"
+vscode "metaphore.kanagawa-vscode-color-theme"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vscode-remote.remote-ssh"
+vscode "ms-vscode-remote.remote-ssh-edit"
+vscode "ms-vscode-remote.remote-wsl"
+vscode "ms-vscode.remote-explorer"
+vscode "steoates.autoimport"
+vscode "ThreadHeap.serverless-ide-vscode"
+vscode "WakaTime.vscode-wakatime"
+vscode "wix.vscode-import-cost"

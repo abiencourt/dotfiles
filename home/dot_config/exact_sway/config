@@ -1,0 +1,14 @@
+# theme variables
+include $HOME/.config/sway/themes/catppuccin/definitions
+
+# global variables
+include $HOME/.config/sway/definitions
+
+# enable modes
+include $HOME/.config/sway/modes/*
+
+# only enable this if every app you use is compatible with wayland
+# xwayland disable
+
+# include additional configs e.g. to autostart applications
+include $HOME/.config/sway/config.d/*.conf

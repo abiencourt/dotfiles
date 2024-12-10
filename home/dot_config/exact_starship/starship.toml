@@ -1,0 +1,25 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+[sudo]
+disabled = false
+
+[directory]
+fish_style_pwd_dir_length = 1
+
+[character]
+success_symbol = "[➜](bold green)" # The "success_symbol" segment is being set to "➜" with the color "bold green"
+
+[aws]
+format = 'on [$symbol$profile]($style) '
+
+[custom.chezmoi_status_diff]
+disabled = true
+description = "The current chezmoi status and number of diffs"
+symbol = ' '
+format = '- [$symbol](bold purple)[\[$output\]](bold red) '
+command = "$XDG_CONFIG_HOME/starship/chezmoi_status_diff.sh"
+when = ' ! chezmoi verify -x scripts '

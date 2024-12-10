@@ -1,0 +1,6 @@
+[user]
+	name = Adrien Biencourt
+	email = adrien@bncrt.com
+
+[commit]
+    gpgsign = true

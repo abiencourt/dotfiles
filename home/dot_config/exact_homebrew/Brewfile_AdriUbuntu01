@@ -1,0 +1,71 @@
+tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
+tap "homebrew/command-not-found"
+tap "jesseduffield/lazydocker"
+tap "jesseduffield/lazynpm"
+tap "wez/wezterm-linuxbrew"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Manage your dotfiles across multiple diverse machines, securely
+brew "chezmoi"
+# Modern, maintained replacement for ls
+brew "eza"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# GNU compiler collection
+brew "gcc"
+# GitHub command-line tool
+brew "gh"
+# Distributed revision control system
+brew "git"
+# Blazing fast terminal-ui for git written in rust
+brew "gitui"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# LastPass command-line interface tool
+brew "lastpass-cli"
+# Simple terminal UI for git commands
+brew "lazygit"
+# Fast, highly customisable system info script
+brew "neofetch"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Manage multiple Node.js versions
+brew "nvm"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Cross-shell prompt for astronauts
+brew "starship"
+# Internet file retriever
+brew "wget"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
+# Fish-like fast/unobtrusive autosuggestions for zsh
+brew "zsh-autosuggestions"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
+# Better and friendly vi(vim) mode plugin for ZSH
+brew "zsh-vi-mode"
+# A simple terminal UI for docker, written in Go
+brew "jesseduffield/lazydocker/lazydocker"
+# A simple terminal UI for git commands, written in Go
+brew "jesseduffield/lazynpm/lazynpm"
+# A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust
+brew "wez/wezterm-linuxbrew/wezterm"
+vscode "bfrangi.vscode-nightingale-theme"
+vscode "bierner.markdown-checkbox"
+vscode "bierner.markdown-emoji"
+vscode "bierner.markdown-mermaid"
+vscode "bierner.markdown-yaml-preamble"
+vscode "Codeium.codeium"
+vscode "dbaeumer.vscode-eslint"
+vscode "eamodio.gitlens"
+vscode "esbenp.prettier-vscode"
+vscode "ms-azuretools.vscode-docker"
+vscode "ozaki.markdown-github-dark"
+vscode "sndst00m.markdown-github-dark-pack"
+vscode "steoates.autoimport"
+vscode "WakaTime.vscode-wakatime"
+vscode "wix.vscode-import-cost"

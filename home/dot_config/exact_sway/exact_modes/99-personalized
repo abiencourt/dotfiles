@@ -1,0 +1,45 @@
+set $mode_layout "<span foreground='$subtext1'></span>  \
+<span foreground='$subtext0'><b>Toggle layouts</b></span> <span foreground='$subtext1'>(<b>Shift+Alt+Space</b>)</span> \
+<span foreground='$subtext0'><b>Fullscreen</b></span> <span foreground='$subtext1'>(<b>Space</b>)</span> \
+<span foreground='$subtext0'><b>Floating</b></span> <span foreground='$subtext1'>(<b>f</b>)</span>"
+
+mode --pango_markup $mode_layout {
+    # Make the current focus fullscreen
+    bindsym space fullscreen
+
+    # Toggle the current focus between tiling and floating mode
+    bindsym f floating toggle
+
+    # Return to default mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+    bindsym Control+e exec wtype -k 'Escape'
+}
+
+bindsym $mod+l mode $mode_layout
+
+bindsym $altShift+space layout toggle splith splitv stacking
+
+# -------------------------------------------------------------------------
+
+set $mode_mode "<span foreground='$subtext1'></span>  \
+<span foreground='$subtext0'><b>Layout</b></span> <span foreground='$subtext1'>(<b>l</b>)</span> \
+<span foreground='$subtext0'><b>Resize</b></span> <span foreground='$subtext1'>(<b>r</b>)</span> \
+<span foreground='$subtext0'><b>Recording</b></span> <span foreground='$subtext1'>(<b>Shift+r</b>)</span> \
+<span foreground='$subtext0'><b>Screenshot</b></span> <span foreground='$subtext1'>(<b>s</b>)</span> \
+<span foreground='$subtext0'><b>Shutdown</b></span> <span foreground='$subtext1'>(<b>e</b>)</span>"
+
+mode --pango_markup $mode_mode {
+    bindsym l mode $mode_layout
+    bindsym r mode $mode_resize
+    bindsym Shift+r mode $mode_recording
+    bindsym s mode $mode_screenshot
+    bindsym e mode $mode_shutdown
+
+    # Return to default mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+    bindsym Control+e exec wtype -k 'Escape'
+}
+
+bindsym $mod+m mode $mode_mode

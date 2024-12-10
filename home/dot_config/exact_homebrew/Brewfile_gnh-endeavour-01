@@ -1,0 +1,104 @@
+tap "homebrew/bundle"
+tap "homebrew/command-not-found"
+tap "jesseduffield/lazydocker"
+tap "jesseduffield/lazynpm"
+tap "ymgyt/syndicationd"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Yet another cross-platform graphical process/system monitor
+brew "bottom"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
+# Manage your dotfiles across multiple diverse machines, securely
+brew "chezmoi"
+# Defines a standard way of committing rules and communicating it
+brew "commitizen"
+# Image previews for lf file manager
+brew "ctpv"
+# Modern, maintained replacement for ls
+brew "eza"
+# Like neofetch, but much faster because written mostly in C
+brew "fastfetch"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Fast and simple Node.js version manager
+brew "fnm"
+# GNU compiler collection
+brew "gcc"
+# GitHub command-line tool
+brew "gh"
+# Distributed revision control system
+brew "git"
+# Blazing fast terminal-ui for git written in rust
+brew "gitui"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Manage your GnuPG keys with ease!
+brew "gpg-tui"
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick"
+# Manage your Java environment
+brew "jenv"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# LastPass command-line interface tool
+brew "lastpass-cli"
+# Simple terminal UI for git commands
+brew "lazygit"
+# Terminal file manager
+brew "lf"
+# Curses-based tool for viewing and analyzing log files
+brew "lnav"
+# Package manager for the Lua programming language
+brew "luarocks"
+# Scalable distributed version control system
+brew "mercurial"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Development kit for the Java programming language
+brew "openjdk@17"
+# Open-source automated testing/benchmarking software
+brew "phoronix-test-suite"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Rust toolchain installer
+brew "rustup"
+# Cross-shell prompt for astronauts
+brew "starship"
+# Very fast implementation of tldr in Rust
+brew "tealdeer"
+# Upgrade all the things
+brew "topgrade"
+# Weather app for the terminal
+brew "wego"
+# Internet file retriever
+brew "wget"
+# Personal information dashboard for your terminal
+brew "wtfutil"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
+# UNIX shell (command interpreter)
+brew "zsh"
+# Fish-like fast/unobtrusive autosuggestions for zsh
+brew "zsh-autosuggestions"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
+# Better and friendly vi(vim) mode plugin for ZSH
+brew "zsh-vi-mode"
+# A simple terminal UI for docker, written in Go
+brew "jesseduffield/lazydocker/lazydocker"
+# A simple terminal UI for git commands, written in Go
+brew "jesseduffield/lazynpm/lazynpm"
+# terminal feed viewer
+brew "ymgyt/syndicationd/synd"
+vscode "codeium.codeium"
+vscode "cucumberopen.cucumber-official"
+vscode "dbaeumer.vscode-eslint"
+vscode "esbenp.prettier-vscode"
+vscode "github.codespaces"
+vscode "github.vscode-github-actions"
+vscode "ms-vscode-remote.remote-containers"
+vscode "vivaxy.vscode-conventional-commits"
+vscode "wakatime.vscode-wakatime"

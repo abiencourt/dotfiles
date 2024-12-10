@@ -1,0 +1,15 @@
+Host *
+    AddKeysToAgent yes
+    IdentitiesOnly yes
+Host revanista.github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/github-revanista
+Host agoodshort.github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/github-agoodshort
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/github-revanista

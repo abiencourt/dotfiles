@@ -1,0 +1,40 @@
+set $mode_shutdown "\
+<span foreground='$subtext1'></span>  \
+<span foreground='$subtext0'> \
+<span foreground='$subtext1'>(<b>h</b>)</span>hibernate \
+<span foreground='$subtext1'>(<b>l</b>)</span>lock \
+<span foreground='$subtext1'>(<b>e</b>)</span>logout \
+<span foreground='$subtext1'>(<b>r</b>)</span>reboot \
+<span foreground='$subtext1'>(<b>u</b>)</span>suspend \
+<span foreground='$subtext1'>(<b>s</b>)</span>shutdown \
+</span>"
+
+set $purge_cliphist [ $purge_cliphist_logout == 'true' ] && rm -f $HOME/.cache/cliphist/db || exit 0
+
+mode --pango_markup $mode_shutdown {
+    # lock
+    $bindsym l mode "default", exec $locking
+
+    # logout
+    $bindsym e exec $purge_cliphist; swaymsg exit
+
+    # suspend
+    $bindsym u mode "default", exec systemctl suspend
+
+    # hibernate
+    $bindsym h mode "default", exec systemctl hibernate
+
+    # shutdown
+    $bindsym s exec $purge_cliphist; exec systemctl poweroff
+
+    # reboot
+    $bindsym r exec $purge_cliphist; exec systemctl reboot
+
+    # Return to default mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+    bindsym Control+e exec wtype -k 'Escape'
+}
+
+## Launch // Exit Menu ##
+$bindsym $mod+Shift+e mode $mode_shutdown

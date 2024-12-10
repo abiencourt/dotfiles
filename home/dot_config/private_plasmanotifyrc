@@ -1,0 +1,14 @@
+[Applications][com.brave.Browser]
+Seen=true
+
+[Applications][com.google.Chrome]
+Seen=true
+
+[Applications][com.microsoft.Edge]
+Seen=true
+
+[Applications][com.slack.Slack]
+Seen=true
+
+[Applications][sh.cider.Cider]
+Seen=true
