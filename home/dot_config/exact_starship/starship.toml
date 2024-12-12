@@ -23,3 +23,8 @@ symbol = ' '
 format = '- [$symbol](bold purple)[\[$output\]](bold red) '
 command = "$XDG_CONFIG_HOME/starship/chezmoi_status_diff.sh"
 when = ' ! chezmoi verify -x scripts '
+
+[time]
+disabled = false
+format = '🕙[\[ $time \]]($style) '
+time_format = '%T'
