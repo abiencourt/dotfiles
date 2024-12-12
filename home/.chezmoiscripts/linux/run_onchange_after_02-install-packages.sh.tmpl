@@ -1,0 +1,33 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/bash
+
+if [ ! -x "$(command -v yay)" ]; then
+    mkdir -p ~/Coding/Personal
+    cd ~/Coding/Personal || exit 1
+
+    git clone https://aur.archlinux.org/yay.git
+    cd yay || exit 1
+    makepkg -si
+    cd ../
+    rm -rf yay
+    yay -Y --gendb
+    yay -Syu --devel
+    yay -Y --devel --save
+
+    # Make yay/pacman colourful
+    sudo sed -i 's/^#Color/Color/' /etc/pacman.conf
+fi
+
+{{ range .packages.linux.cargo -}}
+cargo install {{ . | quote }}
+{{ end -}}
+
+{{ range .packages.linux.yay -}}
+yay -S --noconfirm --needed {{ . | quote }}
+{{ end -}}
+
+{{ range .packages.linux.flatpak -}}
+flatpak install -y {{ . | quote }}
+{{ end -}}
+
+{{ end -}}
