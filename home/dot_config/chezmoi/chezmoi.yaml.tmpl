@@ -1,0 +1,10 @@
+diff:
+  exclude:
+    - scripts
+status:
+  exclude:
+    - scripts
+hooks:
+  read-source-state:
+    pre:
+      command: ".local/share/chezmoi/home/.chezmoiscripts/.first-install.sh"
