@@ -1,5 +1,7 @@
 # My chezmoi dotfiles
 
+[![Coding time over the last 30 days](https://wakapi.dev/api/badge/abiencourt/interval:30_days/label:chezmoi?label=last%2030d)](https://wakapi.dev/)
+
 <!-- toc -->
 
 - [Installation](#installation)
@@ -11,8 +13,7 @@
     - [2.2. Associate the key with GitHub](#22-associate-the-key-with-github)
     - [2.3. Add the GitHub SSH key to known_host](#23-add-the-github-ssh-key-to-known_host)
   - [3. Getting started with chezmoi](#3-getting-started-with-chezmoi)
-  - [4. Install node through fnm](#4-install-node-through-fnm)
-  - [5. Additional steps based on OS](#5-additional-steps-based-on-os)
+  - [4. Additional steps based on OS](#4-additional-steps-based-on-os)
 - [Tools](#tools)
 - [To-Do](#to-do)
 - [References](#references)
@@ -87,15 +88,7 @@ brew install chezmoi
 chezmoi init --apply agoodshort
 ```
 
-### 4. Install node through fnm
-
-```bash
-brew install fnm
-fnm install lts/iron
-fnm use lts/iron
-```
-
-### 5. Additional steps based on OS
+### 4. Additional steps based on OS
 
 - [MacOS](/docs/MACOS.md)
 - [Arch](/docs/ARCH.md)
@@ -116,6 +109,7 @@ List of tools used is available in [Tools](/docs/TOOLS.md).
 - [ ] Install `howdy`, follow the steps on [this page](https://forum.endeavouros.com/t/tutorial-installing-howdy-now-its-personal/38095)
 - [ ] Install and configure `swww` for wallpaper
 - [ ] Finish the installation of `hyprland`
+- [ ] add homebrew to `packages.yaml`
 
 ![image](https://github.com/agoodshort/dotfiles/assets/33832653/f9eaa504-ca26-4b2b-bd64-a3a4da49b793)
 

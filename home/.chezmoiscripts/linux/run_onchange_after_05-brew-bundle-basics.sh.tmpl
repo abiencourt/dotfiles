@@ -2,7 +2,7 @@
 
 # Brewfile_Basics.tmpl hash: {{ include "dot_config/exact_homebrew/Brewfile_Basics.tmpl" | sha256sum }}
 
-echo "----- start: 02-brew-bundle-basics.sh -----"
+echo "----- start: 05-brew-bundle-basics.sh -----"
 
 if [[ -f $HOME/.config/homebrew/Brewfile_Basics ]]; then
     echo "Installing homebrew basics..."
@@ -31,4 +31,4 @@ echo "Find out how to symlink openjdk@17 on linux"
 chezmoi_warnings+=("/!\ Find out how to symlink openjdk@17 on linux /!\ ")
 {{ end }}
 
-echo "----- end: 02-brew-bundle-basics.sh -----"
+echo "----- end: 05-brew-bundle-basics.sh -----"
