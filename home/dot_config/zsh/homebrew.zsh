@@ -70,4 +70,44 @@ fi
 if [[ -f "$HOMEBREW_PREFIX/bin/jenv" ]]; then
 	export PATH="$HOME/.jenv/bin:$PATH"
 	eval "$(jenv init -)"
+# ------------------------------------------------------------------------------
+# Aliases
+# ------------------------------------------------------------------------------
+# gh
+if [[ -f "$HOMEBREW_PREFIX/bin/gh" ]]; then
+    alias gce="gh copilot explain"
+    alias gcs="gh copilot suggest"
+fi
+
+# lazygit
+if [[ -f "$HOMEBREW_PREFIX/bin/lazygit" ]]; then
+    alias lg="lazygit"
+fi
+
+# lazydocker
+if [[ -f "$HOMEBREW_PREFIX/bin/lazydocker" ]]; then
+    alias ld="lazydocker"
+fi
+
+# chezmoi
+if [[ -f "$HOMEBREW_PREFIX/bin/lazydocker" ]]; then
+    alias cm="chezmoi"
+fi
+
+# bat
+if [[ -f "$HOMEBREW_PREFIX/bin/bat" ]]; then
+    alias cat="bat"
+fi
+
+# eza
+if [[ -f "$HOMEBREW_PREFIX/bin/eza" ]]; then
+    alias ls="eza --icons --group-directories-first"
+    alias ll="eza --icons --group-directories-first -la"
+    function tree() {
+        if [[ "$@" != "" ]]; then
+            eza --tree --icons --group-directories-first "$@"
+        else
+            eza --tree --icons --group-directories-first
+        fi
+    }
 fi
