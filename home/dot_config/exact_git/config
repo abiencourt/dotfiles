@@ -1,15 +1,11 @@
-[includeIf  "hasconfig:remote.*.url:git@revanista.github.com:**/**"]
-    path = profile/revanista
-[includeIf  "hasconfig:remote.*.url:git@agoodshort.github.com:**/**"]
-    path = profile/agoodshort
-[includeIf  "hasconfig:remote.*.url:https://github.com/agoodshort/**"]
-    path = profile/agoodshort
 [includeIf  "hasconfig:remote.*.url:git@github.com:**/**"]
     path = profile/abiencourt
-[includeIf  "hasconfig:remote.*.url:git@abiencourt.github.com:**/**"]
+[includeIf  "hasconfig:remote.*.url:https://github.com/**/**"]
     path = profile/abiencourt
-[includeIf  "hasconfig:remote.*.url:https://github.com/abiencourt/**"]
-    path = profile/abiencourt
+[includeIf  "hasconfig:remote.*.url:https://github.com/agoodshort/**"]
+    path = profile/agoodshort
+[includeIf  "hasconfig:remote.*.url:https://github.com/mgtgnh/**"]
+    path = profile/revanista
 [core]
     editor = nvim --cmd 'let g:unception_block_while_host_edits=1'
 [push]
@@ -18,12 +14,8 @@
 	tool = nvimdiff
 [pull]
 	rebase = false
-[url "git@revanista.github.com:mgtgnh"]
-    insteadOf = ssh://git@github.com/mgtgnh
-[url "git@agoodshort.github.com:agoodshort"]
-    insteadOf = https://github.com/agoodshort
-[url "git@abiencourt.github.com:"]
-    insteadOf = https://github.com/abiencourt
+[url "git@github.com:"]
+    insteadOf = https://github.com/
 [init]
 	defaultBranch = main
 [user]
