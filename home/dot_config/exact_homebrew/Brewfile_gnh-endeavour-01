@@ -3,6 +3,12 @@ tap "homebrew/command-not-found"
 tap "jesseduffield/lazydocker"
 tap "jesseduffield/lazynpm"
 tap "ymgyt/syndicationd"
+# Asciicast to GIF converter
+brew "agg"
+# Record and share terminal sessions
+brew "asciinema"
+# Simple API client (Postman-like) in your terminal
+brew "atac"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -68,7 +74,7 @@ brew "rustup"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Very fast implementation of tldr in Rust
-brew "tealdeer"
+brew "tealdeer", link: false
 # Upgrade all the things
 brew "topgrade"
 # Weather app for the terminal
@@ -93,12 +99,28 @@ brew "jesseduffield/lazydocker/lazydocker"
 brew "jesseduffield/lazynpm/lazynpm"
 # terminal feed viewer
 brew "ymgyt/syndicationd/synd"
-vscode "codeium.codeium"
+vscode "bierner.markdown-checkbox"
+vscode "bierner.markdown-emoji"
+vscode "bierner.markdown-mermaid"
+vscode "bierner.markdown-preview-github-styles"
+vscode "bierner.markdown-yaml-preamble"
+vscode "catppuccin.catppuccin-vsc"
+vscode "catppuccin.catppuccin-vsc-icons"
+vscode "catppuccin.catppuccin-vsc-pack"
 vscode "cucumberopen.cucumber-official"
 vscode "dbaeumer.vscode-eslint"
+vscode "eamodio.gitlens"
 vscode "esbenp.prettier-vscode"
 vscode "github.codespaces"
+vscode "github.copilot"
+vscode "github.copilot-chat"
 vscode "github.vscode-github-actions"
+vscode "hediet.vscode-drawio"
+vscode "ms-azuretools.vscode-docker"
 vscode "ms-vscode-remote.remote-containers"
+vscode "ozaki.markdown-github-dark"
+vscode "sndst00m.markdown-github-dark-pack"
+vscode "steoates.autoimport"
 vscode "vivaxy.vscode-conventional-commits"
 vscode "wakatime.vscode-wakatime"
+vscode "wix.vscode-import-cost"
