@@ -1,4 +1,12 @@
-tap "homebrew/bundle"
+# ---------------------------------------------------------------
+# Required dependencies to setup the repo
+# ---------------------------------------------------------------
+# LastPass command-line interface tool
+brew "lastpass-cli"
+# Manage your dotfiles across multiple diverse machines, securely
+brew "chezmoi"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
 
 # ---------------------------------------------------------------
 # Programming languages
@@ -27,35 +35,33 @@ brew "gh"
 brew "commitizen"
 
 # ---------------------------------------------------------------
-# Chezmoi
-# ---------------------------------------------------------------
-# LastPass command-line interface tool
-brew "lastpass-cli"
-# Manage your dotfiles across multiple diverse machines, securely
-brew "chezmoi"
-
-# ---------------------------------------------------------------
 # VSCode
 # ---------------------------------------------------------------
+vscode "alexkrechik.cucumberautocomplete"
+vscode "bierner.markdown-checkbox"
+vscode "bierner.markdown-emoji"
 vscode "bierner.markdown-mermaid"
 vscode "bierner.markdown-preview-github-styles"
+vscode "bierner.markdown-yaml-preamble"
 vscode "catppuccin.catppuccin-vsc"
 vscode "catppuccin.catppuccin-vsc-icons"
 vscode "catppuccin.catppuccin-vsc-pack"
-vscode "codeium.codeium"
-vscode "cucumberopen.cucumber-official"
 vscode "dbaeumer.vscode-eslint"
 vscode "eamodio.gitlens"
 vscode "esbenp.prettier-vscode"
+vscode "github.codespaces"
+vscode "github.copilot"
+vscode "github.copilot-chat"
+vscode "github.vscode-github-actions"
+vscode "hediet.vscode-drawio"
+vscode "kamikillerto.vscode-colorize"
+vscode "ms-azuretools.vscode-containers"
 vscode "ms-azuretools.vscode-docker"
-# vscode "redhat.java"
+vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vsliveshare.vsliveshare"
+vscode "ozaki.markdown-github-dark"
 vscode "sndst00m.markdown-github-dark-pack"
 vscode "steoates.autoimport"
-# vscode "vmware.vscode-spring-boot"
-# vscode "vscjava.vscode-java-debug"
-# vscode "vscjava.vscode-maven"
-# vscode "vscjava.vscode-spring-boot-dashboard"
-# vscode "vscjava.vscode-spring-initializr"
 vscode "wakatime.vscode-wakatime"
 vscode "wix.vscode-import-cost"
 
@@ -88,8 +94,8 @@ brew "lazygit"
 # ---------------------------------------------------------------
 # Simple, fast and user-friendly alternative to find
 brew "fd"
-# Simplified and community-driven man pages
-brew "tldr"
+# Very fast implementation of tldr in Rust
+brew "tealdeer"
 # Upgrade all the things
 brew "topgrade"
 # Yet another cross-platform graphical process/system monitor
