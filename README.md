@@ -37,22 +37,10 @@ Install the [Homebrew dependencies for Linux](https://docs.brew.sh/Homebrew-on-L
 
 #### 1.2. Install dependencies
 
-```bash
- # Sway dependencies
- # yay -S sway rofi swayidle waybar playerctl kanshi light swaync
- # swaybg swaylock kvantum waybar-updates bluetuith swappy cliphist inotify-tools catppuccin-gtk-theme-macchiato ttf-roboto-mono-nerd ttf-roboto-mono
+Dependencies will be automatically installed through [packages.yaml](home/.chezmoidata/packages.yaml).
 
- # hyprland dependencies
- yay -S hyprland xdg-desktop-portal-hyprland wofi swaync --noconfirm
- yay -S grimblast-git swappy showmethekey wf-recorder --noconfirm # Need to implement shortcuts in hyprland
- yay -S waybar ttf-roboto-mono-nerd ttf-roboto-mono hyprland-autoname-workspaces-git waybar-updates bluetuith --noconfirm
- yay -S hyprlock hypridle kanshi --noconfirm # To finish
- # to review: waybar-mpris swww
-
- # theme: install and run both nwg-look and qt6ct to set as you're liking, however config should be saved already
- yay -S catppuccin-gtk-theme-macchiato nwg-look qt6ct
-fi
-```
+> [!NOTE]
+> To install [hyprland](https://hyprland.org/) refer to the [hyprland documentation](docs/HYPRLAND.md).
 
 ### 2. Setup ssh for GitHub
 
@@ -90,8 +78,8 @@ chezmoi init --apply agoodshort
 
 ### 4. Additional steps based on OS
 
-- [MacOS](/docs/MACOS.md)
-- [Arch](/docs/ARCH.md)
+- [MacOS](docs/MACOS.md)
+- [Arch](docs/ARCH.md)
 
 ## Tools
 
