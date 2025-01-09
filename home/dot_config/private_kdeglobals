@@ -137,9 +137,12 @@ DirSelectDialog Size=640,480
 History Items[$e]=file:$HOME/Coding/GNH/revanista,file:$HOME/Coding/Personal/Kvantum/src/Catppuccin-Macchiato-Blue
 
 [General]
-ColorSchemeHash=babca25f3a5cf7ece26a85de212ab43d0a141257
+ColorSchemeHash=3886198382806e054c661155860b98929fea6a49
 TerminalApplication=kitty
 TerminalService=kitty.desktop
+
+[KDE]
+LookAndFeelPackage=org.kde.klassydarkleftpanel.desktop
 
 [KFileDialog Settings]
 Allow Expansion=false
@@ -159,7 +162,10 @@ Sort directories first=true
 Sort hidden files last=false
 Sort reversed=true
 Speedbar Width=140
-View Style=Simple
+View Style=Detail
+
+[KScreen]
+ScreenScaleFactors=eDP-1=1;DP-1=1;HDMI-1=1;DP-2=1;HDMI-2=1;DP-3=1;
 
 [WM]
 activeBackground=49,54,59
