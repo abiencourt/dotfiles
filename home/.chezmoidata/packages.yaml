@@ -22,6 +22,12 @@ packages:
       - "etcher-bin"
       - "openssh"
       - "wl-clipboard"
+      - "xclip"
+      # Immersed dependencies
+      - "immersed"
+      - "v4l2loopback"
+      - "v4l2loopback-utils"
+      - "libva-intel-driver"
 
     # cargo install --list
     cargo:

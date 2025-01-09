@@ -1,0 +1,19 @@
+{
+    "id": "180b4f9d1cdb736623972b35a1170ce0",
+    "metadata": {
+        "fullname": "xrandr-Samsung Electric Company-C24F390-H4ZMB07597",
+        "name": "DP-3"
+    },
+    "mode": {
+        "refresh": 71.91043090820312,
+        "size": {
+            "height": 1080,
+            "width": 1920
+        }
+    },
+    "overscan": 0,
+    "rgbrange": 0,
+    "rotation": 1,
+    "scale": 1,
+    "vrrpolicy": 2
+}
