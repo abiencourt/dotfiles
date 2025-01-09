@@ -23,6 +23,7 @@ packages:
       - "openssh"
       - "wl-clipboard"
       - "xclip"
+      - "klassy" # theme and focused window highlighter
       # Immersed dependencies
       - "immersed"
       - "v4l2loopback"

@@ -1,0 +1,13 @@
+[ButtonSizing]
+ButtonCustomCornerRadius=1
+
+[Global]
+LookAndFeelSet=org.kde.klassydarkleftpanel.desktop
+
+[Windeco]
+ButtonIconStyle=StyleTraditional
+ButtonShape=ShapeFullHeightRoundedRectangle
+WindowCornerRadius=10
+
+[WindowOutlineStyle]
+ThinWindowOutlineThickness=5
