@@ -1,0 +1,77 @@
+[
+    {
+        "enabled": true,
+        "id": "78e54fea636efecba5aa8865538df9bc",
+        "metadata": {
+            "fullname": "xrandr-BOE",
+            "name": "eDP-1"
+        },
+        "mode": {
+            "refresh": 59.98829650878906,
+            "size": {
+                "height": 900,
+                "width": 1600
+            }
+        },
+        "overscan": 0,
+        "pos": {
+            "x": 140,
+            "y": 0
+        },
+        "priority": 1,
+        "rgbrange": 0,
+        "rotation": 1,
+        "scale": 1,
+        "vrrpolicy": 2
+    },
+    {
+        "enabled": false,
+        "id": "a7385530b400fa08df86206e095d85e7",
+        "metadata": {
+            "fullname": "xrandr-AG352UCG6-#ASO7QFAlij7d",
+            "name": "DP-1"
+        },
+        "mode": {
+            "refresh": 100,
+            "size": {
+                "height": 1440,
+                "width": 3440
+            }
+        },
+        "overscan": 0,
+        "pos": {
+            "x": 3520,
+            "y": 0
+        },
+        "priority": 0,
+        "rgbrange": 0,
+        "rotation": 1,
+        "scale": 1,
+        "vrrpolicy": 2
+    },
+    {
+        "enabled": true,
+        "id": "180b4f9d1cdb736623972b35a1170ce0",
+        "metadata": {
+            "fullname": "xrandr-Samsung Electric Company-C24F390-H4ZMB07597",
+            "name": "DP-3"
+        },
+        "mode": {
+            "refresh": 71.91043090820312,
+            "size": {
+                "height": 1080,
+                "width": 1920
+            }
+        },
+        "overscan": 0,
+        "pos": {
+            "x": 0,
+            "y": 900
+        },
+        "priority": 2,
+        "rgbrange": 0,
+        "rotation": 1,
+        "scale": 1,
+        "vrrpolicy": 2
+    }
+]

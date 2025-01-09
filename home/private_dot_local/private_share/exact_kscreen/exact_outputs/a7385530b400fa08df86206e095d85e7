@@ -1,0 +1,19 @@
+{
+    "id": "a7385530b400fa08df86206e095d85e7",
+    "metadata": {
+        "fullname": "xrandr-AG352UCG6-#ASO7QFAlij7d",
+        "name": "DP-1"
+    },
+    "mode": {
+        "refresh": 100,
+        "size": {
+            "height": 1440,
+            "width": 3440
+        }
+    },
+    "overscan": 0,
+    "rgbrange": 0,
+    "rotation": 1,
+    "scale": 1,
+    "vrrpolicy": 2
+}

@@ -1,0 +1,19 @@
+{
+    "id": "78e54fea636efecba5aa8865538df9bc",
+    "metadata": {
+        "fullname": "xrandr-BOE",
+        "name": "eDP-1"
+    },
+    "mode": {
+        "refresh": 59.98829650878906,
+        "size": {
+            "height": 900,
+            "width": 1600
+        }
+    },
+    "overscan": 0,
+    "rgbrange": 0,
+    "rotation": 1,
+    "scale": 1,
+    "vrrpolicy": 2
+}

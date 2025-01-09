@@ -1,0 +1,14 @@
+DisableNVENC=0
+DisableQuickSync=1
+DisableVAAPI=0
+DisableHEVC=0
+DisableAMF=1
+DisableGPUResize=0
+EnableAudio=0
+HideAtLaunch=0
+EnableAreaCapture=1
+IgnoreUpdate=0
+TryVA1First=0
+ForceGPUDeviceName=
+CameraDevice=/dev/video9
+Data={"ADB":"{\\"Devices\\":[{\\"ID\\":\\"\\",\\"Name\\":\\"\\"},{\\"ID\\":\\"\\",\\"Name\\":\\"1WMHHA68TN2434\\"},{\\"ID\\":\\"\\",\\"Name\\":\\"Quest_2 (1WMHHA68TN2434)\\"}]}","ADBPath":"usr/bin/adb","Analytics":"{\\"Data\\":[],\\"IsEnabled\\":true}","Capture":"{\\"EnableAppFrames\\":false,\\"FPS\\":60.0,\\"FPSFor2\\":60.0,\\"FPSFor4\\":30.0,\\"SavedFrames\\":[]}","Client":"raLDG827Yf1DriQtlfG46pRb/0jf/WxsWbDeQAquVZM4b6cGiCrzAdk2DfJj/lnad+PyLObg2E1OHwMwtsmEBvnqfAq5nqbGz6G2k3k86NTfTQG+qyeenYUNoPLkJl/kknOdLM2xBsMzIHbNb4Q1AA==","EnableAudio":false,"Encode":{"Codec":3,"Encoder":"Auto","ForceBitrate":0,"GPU":{"LocalCaptureFPS":60.0,"LocalMaxBitrate":16000.0,"LocalMinBitrate":4000.0,"RemoteCaptureFPS":30.0,"RemoteMaxBitrate":8000.0,"RemoteMinBitrate":1000.0},"Quality":1.0},"ForceIPAddress":"","ForcePort":0,"ForceStreamPort":0,"Log":"{\\"CurrentSuccessCount\\":6,\\"EnableForceLog\\":false}","SettingVersion":1,"WebRTC":"null"}
