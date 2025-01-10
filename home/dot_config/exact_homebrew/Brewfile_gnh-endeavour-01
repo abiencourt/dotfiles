@@ -43,6 +43,8 @@ brew "gitui"
 brew "go"
 # Manage your GnuPG keys with ease!
 brew "gpg-tui"
+# Fast configurable port scanner with reasonable defaults
+brew "havn"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # Manage your Java environment
@@ -71,6 +73,8 @@ brew "phoronix-test-suite"
 brew "ripgrep"
 # Rust toolchain installer
 brew "rustup"
+# Simple terminal UI for search and replace
+brew "serpl"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Very fast implementation of tldr in Rust

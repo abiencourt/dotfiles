@@ -34,14 +34,12 @@ packages:
     cargo:
       - "pokeget"
       - "cargo-update" # used by topgrade
-      - "serpl" # search and replace tool
       - "systemctl-tui"
       - "regect" # Regex tool
-      - "mdbook"
+      - "mdbook" # Shall we try to migrate to brew?
       - "mdbook-variables"
       - "parui"
       - "ttyper"
-      - "havn"
 
     # flatpak list --app
     flatpak:
