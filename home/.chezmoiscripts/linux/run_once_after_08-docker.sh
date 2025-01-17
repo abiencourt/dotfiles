@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "----- start: 03-docker.sh -----"
+echo "----- start: 08-docker.sh -----"
 if [[ ! -x "$(command -v docker)" ]]; then
     if [[ ! $OSTYPE == 'darwin'* ]]; then
         yay -S docker docker-compose --noconfirm --needed
@@ -13,4 +13,4 @@ if [[ ! -x "$(command -v docker)" ]]; then
 else
     echo "docker is already installed"
 fi
-echo "----- end: 03-docker.sh -----"
+echo "----- end: 08-docker.sh -----"

@@ -1,0 +1,23 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/bash
+
+echo "----- start: 02-snap.sh -----"
+if [ ! -x "$(command -v snap)" ]; then
+    echo "Installing snap..."
+    yay -S snapd --noconfirm --needed
+
+    # https://snapcraft.io/docs/installing-snap-on-arch-linux
+    echo "Enabling the snapd socket..."
+    sudo systemctl enable --now snapd.socket
+
+    fielse
+    echo "snap is already installed"
+
+fi
+
+{{ range .packages.linux.snap -}}
+snap install {{ . | quote }}
+{{ end -}}
+
+echo "----- end: 02-snap.sh -----"
+{{ end -}}

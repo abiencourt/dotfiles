@@ -1,6 +1,7 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/bash
 
+echo "----- start: 03-install-packages.sh -----"
 if [ ! -x "$(command -v yay)" ]; then
     mkdir -p ~/Coding/Personal
     cd ~/Coding/Personal || exit 1
@@ -30,4 +31,5 @@ yay -S --noconfirm --needed {{ . | quote }}
 flatpak install -y {{ . | quote }}
 {{ end -}}
 
+echo "----- end: 03-install-packages.sh -----"
 {{ end -}}
