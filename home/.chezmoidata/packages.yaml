@@ -53,7 +53,6 @@ packages:
       - "org.gimp.GIMP"
       - "org.libreoffice.LibreOffice"
       - "org.remmina.Remmina"
-      - "sh.cider.Cider"
       - "us.zoom.Zoom"
 
     # snap list

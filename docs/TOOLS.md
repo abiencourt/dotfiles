@@ -11,6 +11,7 @@
   - [Personal browser](#personal-browser)
 - [Presentation](#presentation)
   - [To consider](#to-consider)
+- [Music](#music)
 - [To-Do](#to-do)
 
 <!-- tocstop -->
@@ -65,6 +66,12 @@ Brave is the default browser for personal use.
 ### To consider
 
 - [ ] <https://github.com/ralexander-phi/marp-to-pages/>
+
+## Music
+
+Cider is an alternative Apple Music with loads of cool added features. It has to be purchased through [itch.io](https://cidercollective.itch.io/cider).
+
+To install, follow the steps outlined on [Cider Taproom](https://taproom.cider.sh/downloads).
 
 ## To-Do
 
