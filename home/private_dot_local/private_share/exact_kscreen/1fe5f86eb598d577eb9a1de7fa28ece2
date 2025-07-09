@@ -43,31 +43,6 @@
             "x": 3520,
             "y": 0
         },
-        "priority": 3,
-        "rgbrange": 0,
-        "rotation": 1,
-        "scale": 1,
-        "vrrpolicy": 2
-    },
-    {
-        "enabled": true,
-        "id": "180b4f9d1cdb736623972b35a1170ce0",
-        "metadata": {
-            "fullname": "xrandr-Samsung Electric Company-C24F390-H4ZMB07597",
-            "name": "DP-3"
-        },
-        "mode": {
-            "refresh": 71.91043090820312,
-            "size": {
-                "height": 1080,
-                "width": 1920
-            }
-        },
-        "overscan": 0,
-        "pos": {
-            "x": 1600,
-            "y": 360
-        },
         "priority": 2,
         "rgbrange": 0,
         "rotation": 1,

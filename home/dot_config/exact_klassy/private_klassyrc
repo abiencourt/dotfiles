@@ -7,7 +7,10 @@ LookAndFeelSet=org.kde.klassydarkleftpanel.desktop
 [Windeco]
 ButtonIconStyle=StyleTraditional
 ButtonShape=ShapeFullHeightRoundedRectangle
+DrawBorderOnMaximizedWindows=true
 WindowCornerRadius=10
 
 [WindowOutlineStyle]
 ThinWindowOutlineThickness=5
+WindowOutlineAccentColorOpacityActive=100
+WindowOutlineAccentWithContrastOpacityInactive=10

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=kitty --hold /home/abiencourt/.local/share/cargo/bin/pokeget random
+Name=Kitty pokeget
+NoDisplay=true
+StartupNotify=false
+Type=Application
+X-KDE-GlobalAccel-CommandShortcut=true

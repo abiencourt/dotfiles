@@ -21,8 +21,8 @@ IntensityAmount=0
 IntensityEffect=0
 
 [Colors:Button]
-BackgroundAlternate=116,93,177
-BackgroundNormal=49,54,59
+BackgroundAlternate=114,90,174
+BackgroundNormal=41,44,48
 DecorationFocus=146,110,228
 DecorationHover=146,110,228
 ForegroundActive=146,110,228
@@ -36,7 +36,7 @@ ForegroundVisited=155,89,182
 
 [Colors:Complementary]
 BackgroundAlternate=30,87,116
-BackgroundNormal=42,46,50
+BackgroundNormal=32,35,38
 DecorationFocus=146,110,228
 DecorationHover=146,110,228
 ForegroundActive=146,110,228
@@ -49,8 +49,8 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [Colors:Header]
-BackgroundAlternate=42,46,50
-BackgroundNormal=49,54,59
+BackgroundAlternate=32,35,38
+BackgroundNormal=41,44,48
 DecorationFocus=146,110,228
 DecorationHover=146,110,228
 ForegroundActive=146,110,228
@@ -63,8 +63,8 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [Colors:Header][Inactive]
-BackgroundAlternate=49,54,59
-BackgroundNormal=42,46,50
+BackgroundAlternate=41,44,48
+BackgroundNormal=32,35,38
 DecorationFocus=61,174,233
 DecorationHover=61,174,233
 ForegroundActive=61,174,233
@@ -77,8 +77,8 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [Colors:Selection]
-BackgroundAlternate=110,86,169
-BackgroundNormal=110,86,169
+BackgroundAlternate=108,83,166
+BackgroundNormal=108,83,166
 DecorationFocus=146,110,228
 DecorationHover=146,110,228
 ForegroundActive=146,110,228
@@ -91,8 +91,8 @@ ForegroundPositive=23,104,57
 ForegroundVisited=155,89,182
 
 [Colors:Tooltip]
-BackgroundAlternate=42,46,50
-BackgroundNormal=49,54,59
+BackgroundAlternate=32,35,38
+BackgroundNormal=41,44,48
 DecorationFocus=146,110,228
 DecorationHover=146,110,228
 ForegroundActive=146,110,228
@@ -105,13 +105,13 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [Colors:View]
-BackgroundAlternate=35,38,41
-BackgroundNormal=27,30,32
+BackgroundAlternate=29,31,34
+BackgroundNormal=20,22,24
 DecorationFocus=146,110,228
 DecorationHover=146,110,228
 ForegroundActive=146,110,228
 ForegroundInactive=161,169,177
-ForegroundLink=209,199,242
+ForegroundLink=146,110,228
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=252,252,252
@@ -119,8 +119,8 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [Colors:Window]
-BackgroundAlternate=49,54,59
-BackgroundNormal=42,46,50
+BackgroundAlternate=41,44,48
+BackgroundNormal=32,35,38
 DecorationFocus=146,110,228
 DecorationHover=146,110,228
 ForegroundActive=146,110,228
@@ -133,11 +133,12 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [DirSelect Dialog]
-DirSelectDialog Size=640,480
-History Items[$e]=file:$HOME/Coding/GNH/revanista,file:$HOME/Coding/Personal/Kvantum/src/Catppuccin-Macchiato-Blue
+DirSelectDialog Size=945,1020
+History Items[$e]=file:$HOME/Coding/GNH/revanista-compose,file:$HOME/Downloads/Job research,file:$HOME/Downloads/Authenticity/ilovepdf_pages-to-jpg,file:$HOME/Coding/GNH/revanista,file:$HOME/Coding/Personal/Kvantum/src/Catppuccin-Macchiato-Blue
+Splitter State=\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\x8c\x00\x00\x02\xa8\x00\xff\xff\xff\xff\x01\x00\x00\x00\x01\x00
 
 [General]
-ColorSchemeHash=3886198382806e054c661155860b98929fea6a49
+ColorSchemeHash=036e29f906c78b56cdde4b1777d3300f03b10363
 TerminalApplication=kitty
 TerminalService=kitty.desktop
 
@@ -148,7 +149,7 @@ LookAndFeelPackage=org.kde.klassydarkleftpanel.desktop
 Allow Expansion=false
 Automatically select filename extension=true
 Breadcrumb Navigation=true
-Decoration position=2
+Decoration position=0
 LocationCombo Completionmode=5
 PathCombo Completionmode=5
 Show Bookmarks=false
@@ -156,7 +157,7 @@ Show Full Path=false
 Show Inline Previews=true
 Show Preview=false
 Show Speedbar=true
-Show hidden files=false
+Show hidden files=true
 Sort by=Date
 Sort directories first=true
 Sort hidden files last=false
@@ -168,9 +169,9 @@ View Style=Detail
 ScreenScaleFactors=eDP-1=1;DP-1=1;HDMI-1=1;DP-2=1;HDMI-2=1;DP-3=1;
 
 [WM]
-activeBackground=49,54,59
+activeBackground=39,44,49
 activeBlend=252,252,252
 activeForeground=252,252,252
-inactiveBackground=42,46,50
+inactiveBackground=32,36,40
 inactiveBlend=161,169,177
 inactiveForeground=161,169,177
