@@ -10,7 +10,6 @@ packages:
     # yay -Qm
     yay:
       - "naps2-bin"
-      - "windsurf"
       - "visual-studio-code-bin"
       - "postman-bin"
       - "android-studio"
