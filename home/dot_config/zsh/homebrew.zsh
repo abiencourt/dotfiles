@@ -2,6 +2,10 @@
 export HOMEBREW_NO_ENV_HINTS=1
 export HOMEBREW_BUNDLE_NO_LOCK=1
 
+# Used with brew imagemagick
+# https://github.com/3rd/image.nvim#installing-imagemagick
+export DYLD_LIBRARY_PATH="$(brew --prefix)/lib:$DYLD_LIBRARY_PATH"
+
 # zsh-syntax-highlighting
 [[ -f "$HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]] && source "$HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
@@ -49,6 +53,11 @@ if [[ -f "$HOMEBREW_PREFIX/bin/thefuck" ]]; then
     eval "$(thefuck --alias)"
 fi
 
+# uv
+if [[ -f "$HOMEBREW_PREFIX/bin/uv" ]]; then
+    export PATH="/home/abiencourt/.local/share/../bin:$PATH"
+fi
+
 # starship
 if [[ -f "$HOMEBREW_PREFIX/bin/starship" ]]; then
     eval "$(starship init zsh)"
@@ -64,6 +73,11 @@ fi
 HB_CNF_HANDLER="$(brew --repository)/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
 if [ -f "$HB_CNF_HANDLER" ]; then
     source "$HB_CNF_HANDLER"
+fi
+
+# fzf keybindings and fuzzy completion
+if [ -f "$HOMEBREW_PREFIX/bin/fzf" ]; then
+    source <($HOMEBREW_PREFIX/bin/fzf --zsh)
 fi
 
 # jenv
