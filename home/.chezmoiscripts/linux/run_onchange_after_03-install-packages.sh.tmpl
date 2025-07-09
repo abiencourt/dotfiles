@@ -31,5 +31,9 @@ yay -S --noconfirm --needed {{ . | quote }}
 flatpak install -y {{ . | quote }}
 {{ end -}}
 
+{{ range .packages.linux.uv -}}
+uv tool install {{ . | quote }}
+{{ end -}}
+
 echo "----- end: 03-install-packages.sh -----"
 {{ end -}}

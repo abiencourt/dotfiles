@@ -81,6 +81,8 @@ brew "starship"
 brew "tealdeer", link: false
 # Upgrade all the things
 brew "topgrade"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
 # Weather app for the terminal
 brew "wego"
 # Internet file retriever

@@ -1,4 +1,4 @@
-# install packages with .chezmoiscripts/run_onchange_01-install-packages.sh.tmpl
+# install packages with .chezmoiscripts/run_onchange_after_03-install-packages.sh.tmpl
 packages:
   darwin:
     brews:
@@ -34,12 +34,15 @@ packages:
     cargo:
       - "pokeget"
       - "cargo-update" # used by topgrade
+      - "cargo-generate"
       - "systemctl-tui"
       - "regect" # Regex tool
       - "mdbook" # Shall we try to migrate to brew?
       - "mdbook-variables"
       - "parui"
       - "ttyper"
+      - "trunk"
+      - "wrkflw"
 
     # flatpak list --app
     flatpak:
@@ -54,6 +57,9 @@ packages:
       - "org.libreoffice.LibreOffice"
       - "org.remmina.Remmina"
       - "us.zoom.Zoom"
+
+    uv:
+      - "aider-chat"
 
     # snap list
     snap:
