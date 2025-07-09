@@ -12,7 +12,6 @@ packages:
       - "naps2-bin"
       - "visual-studio-code-bin"
       - "postman-bin"
-      - "android-studio"
       - "akm" # great tool for kernel selection
       - "xmlstarlet" # used by adaptifier
       - "flatpak"
