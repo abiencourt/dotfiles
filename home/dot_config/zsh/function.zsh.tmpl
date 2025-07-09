@@ -1,61 +1,61 @@
 whichbrew=$(which brew)
 
 function brew() {
-	if [[ $1 == "install" ]]; then
-		echo "----- start: brew install -----"
-		$whichbrew "$@"
-		echo "----- end: brew install -----"
+    if [[ $1 == "install" ]]; then
+        echo "----- start: brew install -----"
+        $whichbrew "$@"
+        echo "----- end: brew install -----"
 
-		echo "----- start: brew autoremove -----"
-		$whichbrew autoremove
-		echo "----- end: brew autoremove -----"
+        echo "----- start: brew autoremove -----"
+        $whichbrew autoremove
+        echo "----- end: brew autoremove -----"
 
-		echo "----- start: Generate Brewfile -----"
-		if [[ ! -f $HOMEBREW_BUNDLE_FILE ]]; then
+        echo "----- start: Generate Brewfile -----"
+        if [[ ! -f $HOMEBREW_BUNDLE_FILE ]]; then
             echo "HOMEBREW_BUNDLE_FILE file does not exit, attempting to create it..."
             touch $HOMEBREW_BUNDLE_FILE
-		fi
-		if [[ -f $HOMEBREW_BUNDLE_FILE ]]; then
-			$whichbrew bundle dump --force --describe
-		else
-			echo "Impossible to generate Brewfile, HOMEBREW_BUNDLE_FILE isn't set"
-		fi
-		echo "----- end: Generate Brewfile -----"
+        fi
+        if [[ -f $HOMEBREW_BUNDLE_FILE ]]; then
+            $whichbrew bundle dump --force --describe
+        else
+            echo "Impossible to generate Brewfile, HOMEBREW_BUNDLE_FILE isn't set"
+        fi
+        echo "----- end: Generate Brewfile -----"
 
-		echo "----- start: Source zsh homebrew config -----"
-		if [[ -f $XDG_CONFIG_HOME/zsh/homebrew.zsh ]]; then
-			source $XDG_CONFIG_HOME/zsh/homebrew.zsh
-		else
-			echo "Impossible to source zsh homebrew config, $XDG_CONFIG_HOME/zsh/homebrew.zsh doesn't exist"
-		fi
-		echo "----- end: Source zsh homebrew config -----"
+        echo "----- start: Source zsh homebrew config -----"
+        if [[ -f $XDG_CONFIG_HOME/zsh/homebrew.zsh ]]; then
+            source $XDG_CONFIG_HOME/zsh/homebrew.zsh
+        else
+            echo "Impossible to source zsh homebrew config, $XDG_CONFIG_HOME/zsh/homebrew.zsh doesn't exist"
+        fi
+        echo "----- end: Source zsh homebrew config -----"
 
-	elif [[ $1 == "uninstall" ]]; then
-		echo "----- start: brew uninstall -----"
-		$whichbrew "$@"
-		echo "----- end: brew uninstall -----"
+    elif [[ $1 == "uninstall" ]]; then
+        echo "----- start: brew uninstall -----"
+        $whichbrew "$@"
+        echo "----- end: brew uninstall -----"
 
-		echo "----- start: brew autoremove -----"
-		$whichbrew autoremove
-		echo "----- end: brew autoremove -----"
+        echo "----- start: brew autoremove -----"
+        $whichbrew autoremove
+        echo "----- end: brew autoremove -----"
 
-		echo "----- start: Generate Brewfile -----"
-		if [[ -f $HOMEBREW_BUNDLE_FILE ]]; then
-			$whichbrew bundle dump --force --describe
-		else
-			echo "Impossible to generate Brewfile, HOMEBREW_BUNDLE_FILE isn't set"
-		fi
-		echo "----- end: Generate Brewfile -----"
+        echo "----- start: Generate Brewfile -----"
+        if [[ -f $HOMEBREW_BUNDLE_FILE ]]; then
+            $whichbrew bundle dump --force --describe
+        else
+            echo "Impossible to generate Brewfile, HOMEBREW_BUNDLE_FILE isn't set"
+        fi
+        echo "----- end: Generate Brewfile -----"
 
-		echo "----- start: Source zsh homebrew config -----"
-		if [[ -f $XDG_CONFIG_HOME/zsh/homebrew.zsh ]]; then
-			source $XDG_CONFIG_HOME/zsh/homebrew.zsh
-		else
-			echo "Impossible to source zsh homebrew config, $XDG_CONFIG_HOME/zsh/homebrew.zsh doesn't exist"
-		fi
-		echo "----- end: Source zsh homebrew config -----"
+        echo "----- start: Source zsh homebrew config -----"
+        if [[ -f $XDG_CONFIG_HOME/zsh/homebrew.zsh ]]; then
+            source $XDG_CONFIG_HOME/zsh/homebrew.zsh
+        else
+            echo "Impossible to source zsh homebrew config, $XDG_CONFIG_HOME/zsh/homebrew.zsh doesn't exist"
+        fi
+        echo "----- end: Source zsh homebrew config -----"
 
-{{ if eq .chezmoi.os "darwin" }}
+{{- if eq .chezmoi.os "darwin" -}}
 	elif [[ $1 == "upgrade" || $1 == "update" ]]; then
 		echo "----- start: brew cu -----"
 		$whichbrew cu -y -a
@@ -64,14 +64,14 @@ function brew() {
 		echo "----- start: brew autoremove -----"
 		$whichbrew autoremove
 		echo "----- end: brew autoremove -----"
-{{ end }}
+{{- end }}
 
-	else
-		$whichbrew "$@"
-	fi
+    else
+        $whichbrew "$@"
+    fi
 }
 
-{{ if eq .chezmoi.os "darwin" }}
+{{- if eq .chezmoi.os "darwin" }}
 # ------------------------------------------------------------------
 whichmas=$(which mas)
 
