@@ -5,6 +5,8 @@ tap "jesseduffield/lazynpm"
 tap "ymgyt/syndicationd"
 # Asciicast to GIF converter
 brew "agg"
+# All-in-one AI-Powered CLI Chat & Copilot
+brew "aichat"
 # Record and share terminal sessions
 brew "asciinema"
 # Simple API client (Postman-like) in your terminal
