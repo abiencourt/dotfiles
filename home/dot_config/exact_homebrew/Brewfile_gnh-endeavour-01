@@ -1,7 +1,8 @@
-tap "homebrew/bundle"
+tap "hashicorp/tap"
 tap "homebrew/command-not-found"
 tap "jesseduffield/lazydocker"
 tap "jesseduffield/lazynpm"
+tap "sapd/headsetcontrol"
 tap "ymgyt/syndicationd"
 # Asciicast to GIF converter
 brew "agg"
@@ -11,6 +12,8 @@ brew "aichat"
 brew "asciinema"
 # Simple API client (Postman-like) in your terminal
 brew "atac"
+# Build full-stack web and mobile apps in hours. Easy to start, easy to scale
+brew "aws-amplify"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -21,18 +24,24 @@ brew "bottom"
 brew "btop"
 # Manage your dotfiles across multiple diverse machines, securely
 brew "chezmoi"
+# Console Matrix
+brew "cmatrix"
 # Defines a standard way of committing rules and communicating it
 brew "commitizen"
 # Image previews for lf file manager
 brew "ctpv"
 # Modern, maintained replacement for ls
 brew "eza"
+# Test various flash cards
+brew "f3"
 # Like neofetch, but much faster because written mostly in C
 brew "fastfetch"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
 # Fast and simple Node.js version manager
 brew "fnm"
+# Command-line fuzzy finder written in Go
+brew "fzf"
 # GNU compiler collection
 brew "gcc"
 # GitHub command-line tool
@@ -71,6 +80,10 @@ brew "neovim"
 brew "openjdk@17"
 # Open-source automated testing/benchmarking software
 brew "phoronix-test-suite"
+# Animated pipes terminal screensaver
+brew "pipes-sh"
+# Cross-platform library for audio I/O
+brew "portaudio"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Rust toolchain installer
@@ -80,11 +93,13 @@ brew "serpl"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Very fast implementation of tldr in Rust
-brew "tealdeer", link: false
+brew "tealdeer"
 # Upgrade all the things
 brew "topgrade"
 # Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
+# Vi 'workalike' with many additional features
+brew "vim"
 # Weather app for the terminal
 brew "wego"
 # Internet file retriever
@@ -101,12 +116,17 @@ brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 # Better and friendly vi(vim) mode plugin for ZSH
 brew "zsh-vi-mode"
+# Terraform
+brew "hashicorp/tap/terraform"
 # A simple terminal UI for docker, written in Go
 brew "jesseduffield/lazydocker/lazydocker"
 # A simple terminal UI for git commands, written in Go
 brew "jesseduffield/lazynpm/lazynpm"
+# Sidetone support for various headsets
+brew "sapd/headsetcontrol/headsetcontrol", args: ["HEAD"]
 # terminal feed viewer
 brew "ymgyt/syndicationd/synd"
+vscode "alexkrechik.cucumberautocomplete"
 vscode "bierner.markdown-checkbox"
 vscode "bierner.markdown-emoji"
 vscode "bierner.markdown-mermaid"
@@ -115,7 +135,6 @@ vscode "bierner.markdown-yaml-preamble"
 vscode "catppuccin.catppuccin-vsc"
 vscode "catppuccin.catppuccin-vsc-icons"
 vscode "catppuccin.catppuccin-vsc-pack"
-vscode "cucumberopen.cucumber-official"
 vscode "dbaeumer.vscode-eslint"
 vscode "eamodio.gitlens"
 vscode "esbenp.prettier-vscode"
@@ -124,11 +143,13 @@ vscode "github.copilot"
 vscode "github.copilot-chat"
 vscode "github.vscode-github-actions"
 vscode "hediet.vscode-drawio"
+vscode "kamikillerto.vscode-colorize"
+vscode "ms-azuretools.vscode-containers"
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vsliveshare.vsliveshare"
 vscode "ozaki.markdown-github-dark"
 vscode "sndst00m.markdown-github-dark-pack"
 vscode "steoates.autoimport"
-vscode "vivaxy.vscode-conventional-commits"
 vscode "wakatime.vscode-wakatime"
 vscode "wix.vscode-import-cost"
