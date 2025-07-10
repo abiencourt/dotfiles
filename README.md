@@ -33,7 +33,8 @@ Install the [Homebrew dependencies for Linux](https://docs.brew.sh/Homebrew-on-L
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-**Warning**: Make sure to follow the steps in "next steps" displayed after the installation.
+> [!WARNING]
+> Make sure to follow the steps in "next steps" displayed after the installation.
 
 #### 1.2. Install dependencies
 
