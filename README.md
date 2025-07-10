@@ -15,6 +15,7 @@
   - [4. Getting started with chezmoi](#4-getting-started-with-chezmoi)
   - [4. Additional steps based on OS](#4-additional-steps-based-on-os)
 - [Tools](#tools)
+- [KDE Plasma widgets](#kde-plasma-widgets)
 - [To-Do](#to-do)
 - [References](#references)
   - [Git multi user](#git-multi-user)
@@ -98,6 +99,12 @@ chezmoi init --apply abiencourt
 ## Tools
 
 List of tools used is available in [Tools](/docs/TOOLS.md).
+Tools and dependencies will be automatically installed through [packages.yaml](home/.chezmoidata/packages.yaml).
+
+## KDE Plasma widgets
+
+[Thermal Monitor](https://store.kde.org/p/2100418)
+[Apdatifier](https://store.kde.org/p/2135796)
 
 ## To-Do
 
@@ -112,8 +119,7 @@ List of tools used is available in [Tools](/docs/TOOLS.md).
 - [ ] Install and configure `swww` for wallpaper
 - [ ] Finish the installation of `hyprland`
 - [ ] add homebrew to `packages.yaml`
-
-![image](https://github.com/agoodshort/dotfiles/assets/33832653/f9eaa504-ca26-4b2b-bd64-a3a4da49b793)
+- [ ] Test [.first-install.sh](home/.chezmoiscripts/.first-install.sh) script, could it be that `--apply` while running `chezmoi init --apply` breaks it
 
 <https://mozilla.github.io/webrtc-landing/gum_test.html> => to test screensharing features
 

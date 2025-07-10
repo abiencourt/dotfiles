@@ -9,19 +9,25 @@ packages:
   linux:
     # yay -Qm
     yay:
+      # GUI packages
+      - "kitty"
       - "naps2-bin"
       - "visual-studio-code-bin"
       - "postman-bin"
+      - "etcher-bin"
+      - "klassy" # theme and focused window highlighter
+
+      # CLI packages
       - "akm" # great tool for kernel selection
-      - "xmlstarlet" # used by adaptifier
       - "flatpak"
       - "zsh"
-      - "kitty"
-      - "etcher-bin"
       - "openssh"
+      - "pacman-contrib" # Adaptifier dependencies
+
+      # Clipboard manipulation tools
       - "wl-clipboard"
       - "xclip"
-      - "klassy" # theme and focused window highlighter
+
       # Immersed dependencies
       - "immersed"
       - "v4l2loopback"
