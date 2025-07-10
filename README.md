@@ -48,12 +48,13 @@ Dependencies will be automatically installed through [packages.yaml](home/.chezm
 
 ```bash
 mkdir ~/.ssh && cd $_
-ssh-keygen -t ed25519 -C "adrien.goodshort@gmail.com" -f "github-agoodshort"
+ssh-keygen -t ed25519 -C "adrien@bncrt.com" -f "github-abiencourt"
 
+# Copy the public key to clipboard
 if [[ $OSTYPE == 'darwin'* ]]; then
-    pbcopy <~/.ssh/github-agoodshort.pub # copy public key to clipboard
+    pbcopy <~/.ssh/github-abiencourt.pub
 else
-    wl-copy <~/.ssh/github-agoodshort.pub # https://neovim.io/doc/user/provider.html#provider-clipboard
+    wl-copy <~/.ssh/github-abiencourt.pub # https://neovim.io/doc/user/provider.html#provider-clipboard
 fi
 ```
 
@@ -73,7 +74,7 @@ curl --silent https://api.github.com/meta |
 
 ```bash
 brew install chezmoi
-chezmoi init --apply agoodshort
+chezmoi init --apply abiencourt
 ```
 
 ### 4. Additional steps based on OS

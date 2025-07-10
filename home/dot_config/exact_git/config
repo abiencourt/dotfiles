@@ -1,7 +1,5 @@
 [includeIf  "hasconfig:remote.*.url:git@github.com:**/**"]
     path = profile/abiencourt
-[includeIf  "hasconfig:remote.*.url:https://github.com/**/**"]
-    path = profile/abiencourt
 [includeIf  "hasconfig:remote.*.url:https://github.com/agoodshort/**"]
     path = profile/agoodshort
 [includeIf  "hasconfig:remote.*.url:https://github.com/mgtgnh/**"]
