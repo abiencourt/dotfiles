@@ -7,12 +7,12 @@
 - [Installation](#installation)
   - [1. Homebrew](#1-homebrew)
     - [1.1. Install Homebrew and required tools](#11-install-homebrew-and-required-tools)
-    - [1.2. Install dependencies](#12-install-dependencies)
+    - [1.2. Install required dependencies](#12-install-required-dependencies)
   - [2. Setup ssh for GitHub](#2-setup-ssh-for-github)
     - [2.1. Create ssh key](#21-create-ssh-key)
     - [2.2. Associate the key with GitHub](#22-associate-the-key-with-github)
-    - [2.3. Add the GitHub SSH key to known_host](#23-add-the-github-ssh-key-to-known_host)
-  - [3. Getting started with chezmoi](#3-getting-started-with-chezmoi)
+  - [3. Login to lastpass-cli](#3-login-to-lastpass-cli)
+  - [4. Getting started with chezmoi](#4-getting-started-with-chezmoi)
   - [4. Additional steps based on OS](#4-additional-steps-based-on-os)
 - [Tools](#tools)
 - [To-Do](#to-do)
@@ -36,9 +36,16 @@ Install the [Homebrew dependencies for Linux](https://docs.brew.sh/Homebrew-on-L
 > [!WARNING]
 > Make sure to follow the steps in "next steps" displayed after the installation.
 
-#### 1.2. Install dependencies
+#### 1.2. Install required dependencies
 
-Dependencies will be automatically installed through [packages.yaml](home/.chezmoidata/packages.yaml).
+```bash
+yay -S openssh \
+    wl-clipboard
+
+brew install chezmoi \
+    jq \
+    lastpass-cli
+```
 
 > [!NOTE]
 > To install [hyprland](https://hyprland.org/) refer to the [hyprland documentation](docs/HYPRLAND.md).
@@ -57,24 +64,29 @@ if [[ $OSTYPE == 'darwin'* ]]; then
 else
     wl-copy <~/.ssh/github-abiencourt.pub # https://neovim.io/doc/user/provider.html#provider-clipboard
 fi
+
+# Start the ssh-agent and add the key
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/github-abiencourt
+
+# Add the GitHub SSH key to known_host
+curl --silent https://api.github.com/meta |
+jq --raw-output '"github.com "+.ssh_keys[]' >>~/.ssh/known_hosts
 ```
 
 #### 2.2. Associate the key with GitHub
 
 Add the copied key in your [GitHub Profile SSH keys](https://github.com/settings/keys).
 
-#### 2.3. Add the GitHub SSH key to known_host
+### 3. Login to lastpass-cli
 
 ```bash
-brew install jq
-curl --silent https://api.github.com/meta |
-    jq --raw-output '"github.com "+.ssh_keys[]' >>~/.ssh/known_hosts
+lpass login --trust <email>
 ```
 
-### 3. Getting started with chezmoi
+### 4. Getting started with chezmoi
 
 ```bash
-brew install chezmoi
 chezmoi init --apply abiencourt
 ```
 
