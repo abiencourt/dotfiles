@@ -1,0 +1,190 @@
+[1]
+Description=Application settings for Outlook Microsoft-edge
+clientmachine=localhost
+desktops=9ad9e008-a205-45a4-93d7-2cd1cd4d9c56
+desktopsrule=3
+size=900,500
+wmclass=crx__faolnafnngnfdaknnbpnkhgohbobgegn Microsoft-edge
+wmclasscomplete=true
+wmclassmatch=1
+
+[1e50b7c0-1b86-42a8-ab44-78e36fc74440]
+Description=Application settings for Slack
+clientmachine=localhost
+desktops=9ad9e008-a205-45a4-93d7-2cd1cd4d9c56
+desktopsrule=3
+wmclass=slack Slack
+wmclasscomplete=true
+wmclassmatch=1
+
+[1f0e023b-d3df-4995-ab99-81db9dc526d5]
+Description=Application settings for Microsoft-edge
+clientmachine=localhost
+desktops=5cd6c62f-0368-415f-8bf7-8a6630665dbd
+desktopsrule=3
+wmclass=microsoft-edge Microsoft-edge
+wmclasscomplete=true
+wmclassmatch=1
+
+[3]
+Description=Application settings for kitty
+clientmachine=localhost
+desktops=acf528e0-4728-4aed-9727-b9163702299f
+desktopsrule=3
+size=900,500
+sizerule=3
+wmclass=kitty
+wmclassmatch=1
+
+[3a7c3377-83e8-48f3-992d-8242da0d6598]
+Description=Application settings for Microsoft-edge
+clientmachine=localhost
+desktops=5cd6c62f-0368-415f-8bf7-8a6630665dbd
+desktopsrule=3
+wmclass=microsoft-edge Microsoft-edge
+wmclasscomplete=true
+wmclassmatch=1
+
+[432f4cb4-9d94-4659-87da-01312560bae6]
+Description=Application settings for Cider
+clientmachine=localhost
+desktops=8afdeabf-b5da-4025-b47e-3555f1adaa60
+desktopsrule=3
+wmclass=cider Cider
+wmclasscomplete=true
+wmclassmatch=1
+
+[49c088e0-a462-4f47-a9aa-c4fe9d89a243]
+Description=Application settings for kitty
+desktops=acf528e0-4728-4aed-9727-b9163702299f
+desktopsrule=3
+wmclass=kitty
+wmclassmatch=1
+
+[4de53a21-14be-4108-98a2-3d681db09948]
+Description=Application settings for Google-chrome
+clientmachine=localhost
+desktops=2e09d9bd-24e4-4b16-9114-2ec1a492a0e6
+desktopsrule=3
+wmclass=crx_faolnafnngnfdaknnbpnkhgohbobgegn Google-chrome
+wmclasscomplete=true
+wmclassmatch=1
+
+[5]
+Description=Application settings for Slack
+clientmachine=localhost
+desktops=9ad9e008-a205-45a4-93d7-2cd1cd4d9c56
+desktopsrule=3
+wmclass=slack Slack
+wmclasscomplete=true
+wmclassmatch=1
+
+[50690f86-3ce5-407a-8763-5e38b545fd8b]
+Description=Application settings for Microsoft-edge
+clientmachine=localhost
+desktops=5d28b4ed-3410-46cf-941f-6692300ef86f,2e09d9bd-24e4-4b16-9114-2ec1a492a0e6
+desktopsrule=3
+wmclass=crx__faolnafnngnfdaknnbpnkhgohbobgegn Microsoft-edge
+wmclasscomplete=true
+wmclassmatch=1
+
+[59487d49-61f5-4f62-aef5-587757e06092]
+Description=Application settings for Teams Microsoft-edge
+clientmachine=localhost
+desktops=9ad9e008-a205-45a4-93d7-2cd1cd4d9c56
+desktopsrule=3
+wmclass=crx__cifhbcnohmdccbgoicgdjpfamggdegmo Microsoft-edge
+wmclasscomplete=true
+wmclassmatch=1
+
+[6]
+Description=Application settings for Brave-browser
+clientmachine=localhost
+desktops=5d28b4ed-3410-46cf-941f-6692300ef86f
+desktopsrule=3
+wmclass=brave-browser Brave-browser
+wmclasscomplete=true
+wmclassmatch=1
+
+[6782303b-59ff-45ac-9cf7-7ea0f971fec0]
+Description=Application settings for Outlook Microsoft-edge
+clientmachine=localhost
+desktops=2e09d9bd-24e4-4b16-9114-2ec1a492a0e6
+desktopsrule=3
+wmclass=crx__faolnafnngnfdaknnbpnkhgohbobgegn Microsoft-edge
+wmclasscomplete=true
+wmclassmatch=1
+
+[7be07555-c4f6-4020-9bf6-543543e96a81]
+Description=Application settings for Microsoft-edge
+clientmachine=localhost
+desktops=5cd6c62f-0368-415f-8bf7-8a6630665dbd
+desktopsrule=3
+wmclass=microsoft-edge Microsoft-edge
+wmclasscomplete=true
+wmclassmatch=1
+
+[880a1b47-eddd-42bb-bda3-a067d3789938]
+Description=Application settings for org.wezfurlong.wezterm
+desktops=acf528e0-4728-4aed-9727-b9163702299f
+desktopsrule=3
+wmclass=\sorg.wezfurlong.wezterm
+wmclasscomplete=true
+wmclassmatch=1
+
+[General]
+count=7
+rules=432f4cb4-9d94-4659-87da-01312560bae6,7be07555-c4f6-4020-9bf6-543543e96a81,59487d49-61f5-4f62-aef5-587757e06092,1,3,5,6
+
+[b1dd71c9-7fc1-445a-9e25-32b1f684f22a]
+Description=Application settings for Google-chrome
+clientmachine=localhost
+desktops=2e09d9bd-24e4-4b16-9114-2ec1a492a0e6
+desktopsrule=3
+wmclass=crx_faolnafnngnfdaknnbpnkhgohbobgegn Google-chrome
+wmclasscomplete=true
+wmclassmatch=1
+
+[b619034f-1e7a-441c-ba64-f2c70ae3125a]
+Description=Application settings for Microsoft-edge Outlook
+clientmachine=localhost
+desktops=2e09d9bd-24e4-4b16-9114-2ec1a492a0e6
+desktopsrule=3
+wmclass=crx__faolnafnngnfdaknnbpnkhgohbobgegn Microsoft-edge
+wmclasscomplete=true
+wmclassmatch=1
+
+[c476efd8-79df-4ae5-a5f0-0caf193288f9]
+Description=Application settings for Google-chrome Outlook
+clientmachine=localhost
+desktops=2e09d9bd-24e4-4b16-9114-2ec1a492a0e6
+desktopsrule=3
+wmclass=crx_faolnafnngnfdaknnbpnkhgohbobgegn Google-chrome
+wmclasscomplete=true
+wmclassmatch=1
+
+[ce0a7d44-cd65-4baf-8193-ed4457401f32]
+Description=Application settings for Cider
+clientmachine=localhost
+desktops=8afdeabf-b5da-4025-b47e-3555f1adaa60
+desktopsrule=3
+wmclass=cider Cider
+wmclasscomplete=true
+wmclassmatch=1
+
+[e3c43f2e-e7d3-46ee-9459-5631c46c72e1]
+Description=Application settings for Brave-browser
+clientmachine=localhost
+desktops=5d28b4ed-3410-46cf-941f-6692300ef86f
+desktopsrule=3
+wmclass=brave-browser Brave-browser
+wmclasscomplete=true
+wmclassmatch=1
+
+[fe515148-c36c-4bb2-b2c5-faf70c6ab838]
+Description=Application settings for org.wezfurlong.wezterm
+desktops=acf528e0-4728-4aed-9727-b9163702299f
+desktopsrule=3
+wmclass=wezterm-gui org.wezfurlong.wezterm
+wmclasscomplete=true
+wmclassmatch=1
