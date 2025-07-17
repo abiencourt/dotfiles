@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfScanProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ScanProfile>
+    <Version>2</Version>
+    <Device>
+      <ID>3bae11a8-c8cb-f382-afa3-433567406f17</ID>
+      <Name>HP DeskJet 4100 series (192.168.50.20)</Name>
+      <IconUri>https://192.168.50.20:443/images/printer.png</IconUri>
+      <ConnectionUri>https://192.168.50.20:443/eSCL</ConnectionUri>
+    </Device>
+    <Caps>
+      <PaperSources>Glass,Feeder</PaperSources>
+      <FeederCheck>true</FeederCheck>
+      <Glass>
+        <ScanArea>8.5x11.69333 in</ScanArea>
+        <Resolutions>75,100,200,300,600,1200</Resolutions>
+      </Glass>
+      <Feeder>
+        <ScanArea>8.5x14 in</ScanArea>
+        <Resolutions>75,100,200,300</Resolutions>
+      </Feeder>
+      <Duplex />
+    </Caps>
+    <DriverName>escl</DriverName>
+    <DisplayName>Home HP DeskJet 4100</DisplayName>
+    <IconID>0</IconID>
+    <MaxQuality>false</MaxQuality>
+    <IsDefault>true</IsDefault>
+    <UseNativeUI>false</UseNativeUI>
+    <AfterScanScale>OneToOne</AfterScanScale>
+    <Brightness>0</Brightness>
+    <Contrast>0</Contrast>
+    <BitDepth>C24Bit</BitDepth>
+    <PageAlign>Right</PageAlign>
+    <PageSize>A4</PageSize>
+    <CustomPageSizeName xsi:nil="true" />
+    <CustomPageSize xsi:nil="true" />
+    <Resolution>Dpi300</Resolution>
+    <PaperSource>Glass</PaperSource>
+    <EnableAutoSave>false</EnableAutoSave>
+    <AutoSaveSettings xsi:nil="true" />
+    <Quality>75</Quality>
+    <AutoDeskew>false</AutoDeskew>
+    <RotateDegrees>0</RotateDegrees>
+    <BrightnessContrastAfterScan>false</BrightnessContrastAfterScan>
+    <ForcePageSize>false</ForcePageSize>
+    <ForcePageSizeCrop>false</ForcePageSizeCrop>
+    <TwainImpl>Default</TwainImpl>
+    <TwainProgress>false</TwainProgress>
+    <ExcludeBlankPages>false</ExcludeBlankPages>
+    <BlankPageWhiteThreshold>70</BlankPageWhiteThreshold>
+    <BlankPageCoverageThreshold>25</BlankPageCoverageThreshold>
+    <WiaOffsetWidth>false</WiaOffsetWidth>
+    <WiaRetryOnFailure>false</WiaRetryOnFailure>
+    <WiaDelayBetweenScans>false</WiaDelayBetweenScans>
+    <WiaDelayBetweenScansSeconds>2</WiaDelayBetweenScansSeconds>
+    <WiaVersion>Default</WiaVersion>
+    <FlipDuplexedPages>false</FlipDuplexedPages>
+    <KeyValueOptions xsi:nil="true" />
+  </ScanProfile>
+</ArrayOfScanProfile>
