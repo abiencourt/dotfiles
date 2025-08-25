@@ -16,6 +16,7 @@
   - [4. Additional steps based on OS](#4-additional-steps-based-on-os)
 - [Tools](#tools)
 - [KDE Plasma widgets](#kde-plasma-widgets)
+- [Configure fingerprint](#configure-fingerprint)
 - [To-Do](#to-do)
 - [References](#references)
   - [Git multi user](#git-multi-user)
@@ -106,6 +107,20 @@ Tools and dependencies will be automatically installed through [packages.yaml](h
 [Thermal Monitor](https://store.kde.org/p/2100418)
 [Apdatifier](https://store.kde.org/p/2135796)
 
+## Configure fingerprint
+
+`fprintd` as dependency for fingerprint and go to "user settings" to add finger print <https://forum.kde.org/viewtopic.php%3Ff=309&t=175570.html>
+
+`sudo nano /etc/pam.d/sudo`
+
+```
+#%PAM-1.0
+auth            sufficient      pam_fprintd.so
+auth            include         system-auth
+account         include         system-auth
+session         include         system-auth
+```
+
 ## To-Do
 
 - [ ] Create a bootstrap script to install the brew bases and login to lastpass
@@ -120,6 +135,9 @@ Tools and dependencies will be automatically installed through [packages.yaml](h
 - [ ] Finish the installation of `hyprland`
 - [ ] add homebrew to `packages.yaml`
 - [ ] Test [.first-install.sh](home/.chezmoiscripts/.first-install.sh) script, could it be that `--apply` while running `chezmoi init --apply` breaks it
+- [ ] Rust installation with `rustup-init` fails at first install
+- [ ] default nvim config has issue with `abiencourt.env` file
+- [ ] write step to install plasma widget and Krohnkite manually
 
 <https://mozilla.github.io/webrtc-landing/gum_test.html> => to test screensharing features
 
