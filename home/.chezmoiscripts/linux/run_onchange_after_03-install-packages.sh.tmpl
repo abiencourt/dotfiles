@@ -1,6 +1,8 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/bash
 
+# packages.yaml hash: {{ include ".chezmoidata/packages.yaml" | sha256sum }}
+
 echo "----- start: 03-install-packages.sh -----"
 if [ ! -x "$(command -v yay)" ]; then
     mkdir -p ~/Coding/Personal
