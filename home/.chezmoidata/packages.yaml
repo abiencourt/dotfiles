@@ -57,11 +57,9 @@ packages:
       - "com.getmailspring.Mailspring"
       - "com.discordapp.Discord"
       - "com.github.tchx84.Flatseal"
-      - "com.slack.Slack"
       - "org.gimp.GIMP"
       - "org.libreoffice.LibreOffice"
       - "org.remmina.Remmina"
-      - "us.zoom.Zoom"
 
     uv:
       - "aider-chat"
