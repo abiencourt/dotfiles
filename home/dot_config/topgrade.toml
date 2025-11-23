@@ -25,7 +25,7 @@ disable = ["chezmoi", "vim", "containers", "node", "uv"]
 
 # Run `sudo -v` to cache credentials at the start of the run
 # This avoids a blocking password prompt in the middle of an unattended run
-pre_sudo = false
+pre_sudo = true
 
 # Run inside tmux
 #run_in_tmux = true
@@ -67,6 +67,8 @@ no_self_update = false
 # Commands to run after anything
 [post_commands]
 #"Emacs Snapshot" = "rm -rf ~/.emacs.d/elpa.bak && cp -rl ~/.emacs.d/elpa ~/.emacs.d/elpa.bak"
+"Flatpak remove unused" = "flatpak remove --unused"
+"Remove yay orphaned packages" = "yay -Yc"
 
 # Custom commands
 [commands]
