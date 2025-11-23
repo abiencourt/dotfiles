@@ -21,6 +21,7 @@
 - [To-Do](#to-do)
 - [References](#references)
   - [Git multi user](#git-multi-user)
+  - [Mount `/home` from a partition](#mount-home-from-a-partition)
 
 <!-- tocstop -->
 
@@ -132,7 +133,7 @@ session         include         system-auth
 - [ ] Create a bootstrap script to install the brew bases and login to lastpass
 - [ ] Look at Timeshift and find out how to partition properly
 - [ ] Work on the format with `{{ end -}}`
-- [ ] Mount [secondary drive as home folder](https://www.howtogeek.com/442101/how-to-move-your-linux-home-directory-to-another-hard-drive/)
+- [ ] Delete `/home.orig/` when sure that nothing is broken
 - [ ] Change `zsh/` to `exact_zsh/`
 - [ ] Finish to setup `wtfutil`
 - [ ] Finish setting up required tools for `lf` previewer => <https://github.com/NikitaIvanovV/ctpv>
@@ -154,3 +155,20 @@ session         include         system-auth
 - <https://gist.github.com/alejandro-martin/aabe88cf15871121e076f66b65306610>
 - <https://stackoverflow.com/a/74832574/13795415>
 - <https://gist.github.com/rahularity/86da20fe3858e6b311de068201d279e3>
+
+### Mount `/home` from a partition
+
+Using a separate partition/drive as `/home` is really useful when distro hopping or reinstalling the OS. Below a great article going through each steps of the process.
+
+> [!WARNING]
+> As I use `brew` for most of my cli tools, I rely heavily on the `linuxbrew` user in `/home`.
+> The command `mv /home /home.orig` in the tutorial will break a lot of things on the current logged in session.
+> Best way to avoid this, is to open a new TTY (CTRL+ALT+F3) and run these commands in it.
+
+```sh
+sudo mv /home /home.orig
+sudo mkdir /home
+sudo mount /dev/nvme0n1p4 /home/
+```
+
+[How to Move Your Linux home Directory to Another Drive](https://www.howtogeek.com/442101/how-to-move-your-linux-home-directory-to-another-hard-drive/)
