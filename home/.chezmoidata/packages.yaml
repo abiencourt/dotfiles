@@ -21,6 +21,7 @@ packages:
       - "akm" # great tool for kernel selection
       - "flatpak"
       - "zsh"
+      - "github-copilot-cli"
       - "openssh"
       - "pacman-contrib" # Adaptifier dependencies
 

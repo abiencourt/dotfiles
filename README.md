@@ -14,6 +14,7 @@
   - [3. Login to lastpass-cli](#3-login-to-lastpass-cli)
   - [4. Getting started with chezmoi](#4-getting-started-with-chezmoi)
   - [4. Additional steps based on OS](#4-additional-steps-based-on-os)
+  - [5. Configure GitHub CLI](#5-configure-github-cli)
 - [Tools](#tools)
 - [KDE Plasma widgets](#kde-plasma-widgets)
 - [Configure fingerprint](#configure-fingerprint)
@@ -97,6 +98,11 @@ chezmoi init --apply abiencourt
 - [MacOS](docs/MACOS.md)
 - [Arch](docs/ARCH.md)
 
+### 5. Configure GitHub CLI
+
+```sh
+gh auth login
+```
 ## Tools
 
 List of tools used is available in [Tools](/docs/TOOLS.md).

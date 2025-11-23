@@ -89,12 +89,6 @@ fi
 # ------------------------------------------------------------------------------
 # Aliases
 # ------------------------------------------------------------------------------
-# gh
-if [[ -f "$HOMEBREW_PREFIX/bin/gh" ]]; then
-    alias gce="gh copilot explain"
-    alias gcs="gh copilot suggest"
-fi
-
 # lazygit
 if [[ -f "$HOMEBREW_PREFIX/bin/lazygit" ]]; then
     alias lg="lazygit"
