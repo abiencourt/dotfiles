@@ -1,0 +1,19 @@
+{
+    "id": "0d458741b3ba3fa80204d982f29362c2",
+    "metadata": {
+        "fullname": "xrandr-BOE-NE135A1M-NY1",
+        "name": "eDP"
+    },
+    "mode": {
+        "refresh": 120.00003051757812,
+        "size": {
+            "height": 1200,
+            "width": 1920
+        }
+    },
+    "overscan": 0,
+    "rgbrange": 0,
+    "rotation": 1,
+    "scale": 1,
+    "vrrpolicy": 2
+}

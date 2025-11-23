@@ -4,36 +4,19 @@ RightButton;NoModifier=org.kde.contextmenu
 [ActionPlugins][1]
 RightButton;NoModifier=org.kde.contextmenu
 
-[Containments][1]
-ItemGeometries-1536x864=
-ItemGeometries-1600x900=
-ItemGeometries-1745x982=
-ItemGeometries-1920x1080=
-ItemGeometries-3440x1440=
+[Containments][149]
+ItemGeometries-1694x1129=
 ItemGeometriesHorizontal=
-activityId=e43c3761-3390-4ce7-94a4-1063f67f6eb5
+activityId=b0ce8cc6-2860-4a93-8e83-b49ec15fd6d4
 formfactor=0
 immutability=1
 lastScreen=0
 location=0
 plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.potd
+wallpaperplugin=org.kde.image
 
-[Containments][1][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
-[Containments][1][General]
-ToolBoxButtonState=topcenter
-ToolBoxButtonX=224
-positions={"1600x900":[],"3440x1440":[]}
-
-[Containments][1][Wallpaper][org.kde.image][General]
-Image=/usr/share/wallpapers/EndeavourOS/
-SlidePaths=/usr/share/wallpapers/
-
-[Containments][1][Wallpaper][org.kde.potd][General]
-FillMode=2
+[Containments][149][General]
+positions={"1694x1129":[]}
 
 [Containments][2]
 activityId=
@@ -232,7 +215,7 @@ widgets=true
 
 [Containments][2][Applets][7][Applets][147][Configuration][Miscellaneous]
 configMsg=false
-timestamp=1752086205711
+timestamp=1755716727018
 version=v2.9.3
 
 [Containments][2][Applets][7][Applets][147][Configuration][Upgrade]
@@ -281,14 +264,14 @@ immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][2][Applets][7][Applets][22][Configuration]
-PreloadWeight=0
+PreloadWeight=34
 
 [Containments][2][Applets][7][Applets][23]
 immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][2][Applets][7][Applets][23][Configuration]
-PreloadWeight=0
+PreloadWeight=34
 
 [Containments][2][Applets][7][Applets][23][Configuration][General]
 showPercentage=true
@@ -341,8 +324,8 @@ DialogWidth=720
 PreloadWeight=100
 
 [Containments][2][Applets][7][General]
-extraItems=org.kde.kscreen,org.kde.plasma.clipboard,org.kde.plasma.printmanager,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.kdeconnect,org.kde.plasma.networkmanagement,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.volume,org.kde.plasma.battery,org.kde.plasma.cameraindicator,org.kde.plasma.manage-inputmethod,org.kde.plasma.bluetooth,org.kde.plasma.notifications,org.kde.plasma.brightness,com.github.exequtic.apdatifier,org.kde.plasma.weather
-knownItems=org.kde.kscreen,org.kde.plasma.clipboard,org.kde.plasma.printmanager,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.brightness,org.kde.kdeconnect,org.kde.plasma.networkmanagement,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.volume,org.kde.plasma.battery,org.kde.plasma.cameraindicator,org.kde.plasma.manage-inputmethod,org.kde.plasma.bluetooth,org.kde.plasma.notifications,com.github.exequtic.apdatifier,org.kde.plasma.weather
+extraItems=org.kde.kscreen,org.kde.plasma.clipboard,org.kde.plasma.printmanager,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.kdeconnect,org.kde.plasma.networkmanagement,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.volume,org.kde.plasma.battery,org.kde.plasma.cameraindicator,org.kde.plasma.manage-inputmethod,org.kde.plasma.bluetooth,org.kde.plasma.notifications,org.kde.plasma.brightness,org.kde.plasma.weather,com.github.exequtic.apdatifier
+knownItems=org.kde.kscreen,org.kde.plasma.clipboard,org.kde.plasma.printmanager,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.brightness,org.kde.kdeconnect,org.kde.plasma.networkmanagement,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.volume,org.kde.plasma.battery,org.kde.plasma.cameraindicator,org.kde.plasma.manage-inputmethod,org.kde.plasma.bluetooth,org.kde.plasma.notifications,org.kde.plasma.weather,com.github.exequtic.apdatifier
 shownItems=org.kde.plasma.bluetooth,org.kde.plasma.notifications,org.kde.plasma.battery
 
 [Containments][2][Applets][72]
@@ -368,8 +351,9 @@ immutability=1
 plugin=org.kde.olib.thermalmonitor
 
 [Containments][2][Applets][77][Configuration]
+PreloadWeight=60
 popupHeight=180
-popupWidth=288
+popupWidth=298
 
 [Containments][2][Applets][77][Configuration][ConfigDialog]
 DialogHeight=540
@@ -380,54 +364,6 @@ sensors=[{"name":"CPU","sensorId":"cpu/all/averageTemperature"}]
 
 [Containments][2][General]
 AppletOrder=27;40;29;6;7;68;77;32;30;72
-
-[Containments][78]
-ItemGeometries-3440x1440=
-ItemGeometriesHorizontal=
-activityId=e43c3761-3390-4ce7-94a4-1063f67f6eb5
-formfactor=0
-immutability=1
-lastScreen=1
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.potd
-
-[Containments][78][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
-[Containments][78][General]
-ToolBoxButtonState=topcenter
-ToolBoxButtonX=1144
-positions={"1920x1080":[],"3440x1440":[]}
-
-[Containments][78][Wallpaper][org.kde.potd][General]
-FillMode=2
-Provider=bing
-
-[Containments][81]
-ItemGeometries-1920x1080=
-ItemGeometriesHorizontal=
-activityId=e43c3761-3390-4ce7-94a4-1063f67f6eb5
-formfactor=0
-immutability=1
-lastScreen=2
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.potd
-
-[Containments][81][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
-[Containments][81][General]
-ToolBoxButtonState=topcenter
-ToolBoxButtonX=384
-positions={"3440x1440":[]}
-
-[Containments][81][Wallpaper][org.kde.potd][General]
-FillMode=2
-Provider=simonstalenhag
 
 [Containments2Appletsts][77][Configuration][Appearance]
 enableDangerColor=true

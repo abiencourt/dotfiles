@@ -1,5 +1,6 @@
 [ActivityManager]
 _k_friendly_name=Activity Manager
+switch-to-activity-b0ce8cc6-2860-4a93-8e83-b49ec15fd6d4=none,none,Switch to activity "Default"
 switch-to-activity-e43c3761-3390-4ce7-94a4-1063f67f6eb5=none,none,Switch to activity "Default"
 
 [KDE Keyboard Layout Switcher]
@@ -79,7 +80,7 @@ KrohnkiteStackedLayout=none,none,Krohnkite: Stacked Layout
 KrohnkiteStairLayout=none,none,Krohnkite: Stair Layout
 KrohnkiteTileLayout=none,none,Krohnkite: Tile Layout
 KrohnkiteToggleFloat=Meta+Shift+Space,none,Krohnkite: Toggle Float
-KrohnkiteTreeColumnLayout=none,none,Krohnkite: Tree Column Layout
+KrohnkiteTreeColumnLayout=none,none,Krohnkite: Three Column Layout
 KrohnkitegrowWidth=none,none,Krohnkite: Grow Width
 KrohnkitetoggleDock=none,none,Krohnkite: Toggle Dock
 Move Tablet to Next Output=none,none,Move the tablet to the next output

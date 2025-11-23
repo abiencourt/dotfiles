@@ -1,0 +1,52 @@
+[
+    {
+        "enabled": true,
+        "id": "0d458741b3ba3fa80204d982f29362c2",
+        "metadata": {
+            "fullname": "xrandr-BOE-NE135A1M-NY1",
+            "name": "eDP"
+        },
+        "mode": {
+            "refresh": 120.00003051757812,
+            "size": {
+                "height": 1200,
+                "width": 1920
+            }
+        },
+        "overscan": 0,
+        "pos": {
+            "x": 1920,
+            "y": 451
+        },
+        "priority": 1,
+        "rgbrange": 0,
+        "rotation": 1,
+        "scale": 1,
+        "vrrpolicy": 2
+    },
+    {
+        "enabled": true,
+        "id": "1c163975bf6448090e3dc66597f1e2b2",
+        "metadata": {
+            "fullname": "xrandr-BOE-Display-L56051794302",
+            "name": "DisplayPort-3"
+        },
+        "mode": {
+            "refresh": 60,
+            "size": {
+                "height": 1080,
+                "width": 1920
+            }
+        },
+        "overscan": 0,
+        "pos": {
+            "x": 0,
+            "y": 0
+        },
+        "priority": 2,
+        "rgbrange": 0,
+        "rotation": 1,
+        "scale": 1,
+        "vrrpolicy": 2
+    }
+]
