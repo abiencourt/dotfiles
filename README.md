@@ -111,14 +111,23 @@ Tools and dependencies will be automatically installed through [packages.yaml](h
 
 ## KDE Plasma widgets
 
-[Thermal Monitor](https://store.kde.org/p/2100418)
-[Apdatifier](https://store.kde.org/p/2135796)
+- [Resource Monitor](https://store.kde.org/p/2143899)
+- [Apdatifier](https://store.kde.org/p/2135796)
+- [Optimus GPU Switcher](https://store.kde.org/p/2138365)
+- [Wallhaven Wallpaper Reborn](https://store.kde.org/p/2193590)
 
 ## Configure fingerprint
 
-`fprintd` as dependency for fingerprint and go to "user settings" to add finger print <https://forum.kde.org/viewtopic.php%3Ff=309&t=175570.html>
+Once `fprintd` is installed through [packages.yaml](./home/.chezmoidata/packages.yaml), go to "user settings" to add finger print.
 
-`sudo nano /etc/pam.d/sudo`
+More details on the KDE forum: [How I got my Fingerprint scanner to work
+](https://forum.kde.org/viewtopic.php%3Ff=309&t=175570.html)
+
+```bash
+sudo nano /etc/pam.d/sudo
+```
+
+👇
 
 ```
 #%PAM-1.0

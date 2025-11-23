@@ -16,6 +16,7 @@ packages:
       - "postman-bin"
       - "etcher-bin"
       - "klassy" # theme and focused window highlighter
+      - "gparted"
       - "cider"
 
       # CLI packages
@@ -29,6 +30,11 @@ packages:
       # Clipboard manipulation tools
       - "wl-clipboard"
       - "xclip"
+
+      # Framework dependencies
+      - "bolt" # adds thunderbolt support
+      - "envycontrol" # GPU switcher
+      - "fprintd" # fingerprint
 
       # Immersed dependencies
       - "immersed"
