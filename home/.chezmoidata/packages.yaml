@@ -16,6 +16,7 @@ packages:
       - "postman-bin"
       - "etcher-bin"
       - "klassy" # theme and focused window highlighter
+      - "cider"
 
       # CLI packages
       - "akm" # great tool for kernel selection

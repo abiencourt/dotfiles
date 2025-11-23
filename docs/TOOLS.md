@@ -31,7 +31,7 @@ Chezmoi allows the use of scripts which are triggered only once, on a file chang
 
 Rust tools are installed using [rustup](https://rustup.rs/).
 
-`rustup` is installed automatically through chezmoi via the [Brewfile_Basics.tmpl](../home/dot_config/exact_homebrew/Brewfile_Basics.tmpl).
+`rustup` is installed automatically through `chezmoi` via the [Brewfile_Basics.tmpl](../home/dot_config/exact_homebrew/Brewfile_Basics.tmpl).
 It is then run once via the [run_once_after_06-rustup.sh](../home/.chezmoiscripts/linux/run_once_after_06-rustup.sh) script.
 
 To uninstall :
@@ -71,7 +71,9 @@ Brave is the default browser for personal use.
 
 Cider is an alternative Apple Music with loads of cool added features. It has to be purchased through [itch.io](https://cidercollective.itch.io/cider).
 
-To install, follow the steps outlined on [Cider Taproom](https://taproom.cider.sh/downloads).
+It is installed through `yay` via the [packages.yaml](../home/.chezmoidata/packages.yaml)
+
+Installation steps are listed on this page: [Cider Taproom](https://taproom.cider.sh/downloads)
 
 ## To-Do
 
