@@ -67,6 +67,3 @@ packages:
       - "org.gimp.GIMP"
       - "org.libreoffice.LibreOffice"
       - "org.remmina.Remmina"
-
-    uv:
-      - "aider-chat"

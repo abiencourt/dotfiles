@@ -19,9 +19,14 @@ yay -S --noconfirm --needed {{ . | quote }}
 flatpak install -y {{ . | quote }}
 {{ end -}}
 
-{{ range .packages.linux.uv -}}
-uv tool install {{ . | quote }}
-{{ end -}}
+if command -v uv >/dev/null 2>&1; then
+    # aider-chat requires special flags
+    uv tool install --force --python python3.12 --with pip aider-chat@latest
+else
+  tput setaf 3
+  echo "uv not found, skipping uv package installation." | tee -a /tmp/chezmoi_warnings.log
+  tput sgr0
+fi
 
 echo "----- end: 03-install-packages.sh -----"
 {{ end -}}
