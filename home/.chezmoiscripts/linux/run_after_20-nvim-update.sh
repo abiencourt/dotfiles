@@ -10,10 +10,10 @@ if [[ -f $HOME/.config/nvim/lazy-lock.json ]]; then
         nvim --headless "+MasonToolsUpdateSync" +qa
         echo "Done updating Neovim"
     else
-        echo "npm is not installed. npm is required by Mason"
+        echo "npm is not installed. npm is required by Mason" | tee -a /tmp/chezmoi_warnings.log
     fi
 else
-    echo "lazy-lock.json does not exist, impossible to update Neovim plugins"
+    echo "lazy-lock.json does not exist, impossible to update Neovim plugins" | tee -a /tmp/chezmoi_warnings.log
 fi
 
 echo "----- end: 20-nvim-update.sh -----"

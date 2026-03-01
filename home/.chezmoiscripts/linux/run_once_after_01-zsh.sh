@@ -10,8 +10,10 @@ if [[ $SHELL != *"zsh"* ]]; then
         sudo sh -c "echo $(which zsh) >> /etc/shells"
     fi
     chsh -s "$(which zsh)"
-    chezmoi_warnings+=("/!\ Default shell changed to zsh /!\ ")
-    chezmoi_warnings+=("/!\ Log out and log back in to use zsh /!\ ")
+    tput setaf 3
+    echo "/!\ Default shell changed to zsh /!\ " | tee -a /tmp/chezmoi_warnings.log
+    echo "/!\ Log out and log back in to use zsh /!\ " | tee -a /tmp/chezmoi_warnings.log
+    tput sgr0
 else
     echo "zsh is already the default shell"
 fi

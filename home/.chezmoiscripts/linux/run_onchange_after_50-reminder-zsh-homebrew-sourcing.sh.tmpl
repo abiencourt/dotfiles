@@ -4,4 +4,8 @@
 
 echo "----- run: 50-reminder-zsh-homebrew-sourcing.sh -----"
 
-chezmoi_warnings+=("/!\ Run \`source $XDG_CONFIG_HOME/zsh/homebrew.zsh\` to refresh the zsh homebrew config /!\ ")
+tput setaf 3
+echo "Run \`source $XDG_CONFIG_HOME/zsh/homebrew.zsh\` to refresh the zsh homebrew config" | tee -a /tmp/chezmoi_warnings.log
+tput sgr0
+
+echo "----- end: 50-reminder-zsh-homebrew-sourcing.sh -----"

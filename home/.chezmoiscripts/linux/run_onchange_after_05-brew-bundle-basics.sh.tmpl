@@ -24,11 +24,14 @@ echo "Symlinking openjdk@17..."
 if [[ -f "$HOMEBREW_PREFIX/opt/openjdk@17/libexec/openjdk.jdk" ]]; then
     sudo ln -sfn $HOMEBREW_PREFIX/opt/openjdk@17/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-17.jdk
 else
-    echo "No openjdk@17 found, impossible to symlink it"
+    tput setaf 3
+    echo "No openjdk@17 found, impossible to symlink it" | tee -a /tmp/chezmoi_warnings.log
+    tput sgr0
 fi
 {{ else if eq .chezmoi.os "linux" }}
-echo "Find out how to symlink openjdk@17 on linux"
-chezmoi_warnings+=("/!\ Find out how to symlink openjdk@17 on linux /!\ ")
+    tput setaf 3
+    echo "Find out how to symlink openjdk@17 on linux" | tee -a /tmp/chezmoi_warnings.log
+    tput sgr0
 {{ end }}
 
 echo "----- end: 05-brew-bundle-basics.sh -----"
