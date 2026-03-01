@@ -5,19 +5,35 @@
 
 echo "----- start: 03-install-packages.sh -----"
 
+if command -v cargo >/dev/null 2>&1; then
+  {{ range .packages.linux.cargo -}}
+  cargo install {{ . | quote }}
+  {{ end -}}
+else
+  tput setaf 3
+  echo "cargo not found, skipping cargo package installation." | tee -a /tmp/chezmoi_warnings.log
+  tput sgr0
 fi
 
-{{ range .packages.linux.cargo -}}
-cargo install {{ . | quote }}
-{{ end -}}
+if command -v yay >/dev/null 2>&1; then
+  {{ range .packages.linux.yay -}}
+  yay -S --noconfirm --needed {{ . | quote }}
+  {{ end -}}
+else
+  tput setaf 3
+  echo "yay not found, skipping yay package installation." | tee -a /tmp/chezmoi_warnings.log
+  tput sgr0
+fi
 
-{{ range .packages.linux.yay -}}
-yay -S --noconfirm --needed {{ . | quote }}
-{{ end -}}
-
-{{ range .packages.linux.flatpak -}}
-flatpak install -y {{ . | quote }}
-{{ end -}}
+if command -v flatpak >/dev/null 2>&1; then
+    {{ range .packages.linux.flatpak -}}
+    flatpak install -y --system {{ . | quote }}
+    {{ end -}}
+else
+  tput setaf 3
+  echo "flatpak not found, skipping flatpak package installation." | tee -a /tmp/chezmoi_warnings.log
+  tput sgr0
+fi
 
 if command -v uv >/dev/null 2>&1; then
     # aider-chat requires special flags
