@@ -70,7 +70,3 @@ packages:
 
     uv:
       - "aider-chat"
-
-    # snap list
-    snap:
-      - "icloud-for-linux"
