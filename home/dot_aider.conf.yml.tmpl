@@ -15,7 +15,9 @@ weak-model: openai/gpt-4o-mini
 # API Keys and settings:
 
 ## Specify the OpenAI API key
+{{- if lookPath "lpass" -}}
 openai-api-key: {{ (index (lastpass "GitHub Copilot") 0).note.key | trim }}
+{{- end }}
 
 ## Specify the api base url
 openai-api-base: https://api.githubcopilot.com
