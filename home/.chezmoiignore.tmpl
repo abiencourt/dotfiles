@@ -1,3 +1,15 @@
+{{- if eq .chezmoi.os "windows" -}}
+**
+
+!.config/
+!.config/starship/** # Default location
+
+!AppData/**
+
+{{- else -}}
+# Only needed on Windows
+AppData/**
+
 # Unix
 
 {{ if ne .chezmoi.os "darwin" }}
@@ -55,3 +67,5 @@ Library
 ## Scripts that shouldn't run on MacOS
 .chezmoiscripts/linux/05-my-flatpak-install.sh
 {{ end }}
+
+{{- end -}}
