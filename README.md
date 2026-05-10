@@ -15,6 +15,7 @@
   - [4. Getting started with chezmoi](#4-getting-started-with-chezmoi)
   - [4. Additional steps based on OS](#4-additional-steps-based-on-os)
   - [5. Configure GitHub CLI](#5-configure-github-cli)
+  - [6. Remember the last kernel used](#6-remember-the-last-kernel-used)
 - [Tools](#tools)
 - [KDE Plasma widgets](#kde-plasma-widgets)
 - [Configure fingerprint](#configure-fingerprint)
@@ -104,6 +105,16 @@ chezmoi init --apply abiencourt
 ```sh
 gh auth login
 ```
+
+### 6. Remember the last kernel used
+
+```conf
+# /efi/loader/loader.conf
+
+default @saved
+...
+```
+
 ## Tools
 
 List of tools used is available in [Tools](/docs/TOOLS.md).
@@ -154,6 +165,7 @@ session         include         system-auth
 - [ ] Rust installation with `rustup-init` fails at first install
 - [ ] default nvim config has issue with `abiencourt.env` file
 - [ ] write step to install plasma widget and Krohnkite manually
+- [ ] Use topgrade to upgrade raspberry pis at home
 
 <https://mozilla.github.io/webrtc-landing/gum_test.html> => to test screensharing features
 
